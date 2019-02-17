@@ -1,14 +1,5 @@
-/**
- * @license
- * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
- * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
- * The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
- * The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
- * Code distributed by Google as part of the polymer project is also
- * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
- */
-
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import '@polymer/app-route/app-location.js';
 import './shared-styles.js';
 
 class MyView3 extends PolymerElement {
@@ -17,19 +8,66 @@ class MyView3 extends PolymerElement {
       <style include="shared-styles">
         :host {
           display: block;
-
           padding: 10px;
         }
+        input , select{
+          width: 500px;
+          padding: 12px;
+          margin-bottom: 12px;
+          border-radius: 4px;
+          border: 1px solid grey;
+        }
+        select{
+          display: block;
+          height: 40px;
+          width: 500px;
+        }
+        button {
+          width: 150px;
+          height: 40px;
+        }
+        label {
+          font-size: 14px;
+        }
       </style>
-
+      <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
       <div class="card">
-        <div class="circle">3</div>
-        <h1>View Three</h1>
-        <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
-        <p>Ea duis bonorum nec, falli paulo aliquid ei eum.Has at minim mucius aliquam, est id tempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+        <label for="postMove">POST Move Enpoint:</label><br>
+        <input type="text" name="postMove" id="postMove" placeholder="http://" value="{{postMove::input}}">
+        <br>
+        <label for="getBoard">GET Board Endpoint:</label><br>
+        <input name="getBoard" id="getBoard" placeholder="http://" value="{{getBoard::input}}">
+        <br>
+        <label for="gameId">Game ID:</label><br>
+        <input name="gameId" id="gameId" value="{{gameId::input}}">
+        <br>
+        <label for="color">Color:</label><br>
+        <select id="color" value="{{color::input}}">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="tan">Tan</option>
+        </select>
+        <br>
+        <button on-click="_save">Save</button>
+
       </div>
     `;
   }
-}
 
-window.customElements.define('my-view3', MyView3);
+  _save(){
+    localStorage.setItem('postMove', this.postMove);
+    localStorage.setItem('getBoard', this.getBoard);
+    localStorage.setItem('gameId', this.gameId);
+    localStorage.setItem('color', this.color);
+    this.set('route.path', '/view1');
+  }
+
+  ready() {
+    super.ready();
+    this.postMove = localStorage.getItem('postMove');
+    this.getBoard = localStorage.getItem('getBoard');
+    this.gameId = localStorage.getItem('gameId');
+    this.color = localStorage.getItem('color');
+   }
+
+} window.customElements.define('my-view3', MyView3);

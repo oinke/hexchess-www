@@ -75,9 +75,8 @@ class MyApp extends PolymerElement {
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>Menu</app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-            <a name="view1" href="[[rootPath]]view1">Play HexChess</a>
-            <a name="view2" href="[[rootPath]]view2">Train Me</a>
-            <a name="view3" href="[[rootPath]]view3">Report Bug</a>
+            <a name="view1" href="[[rootPath]]view1">Play</a>
+            <a name="view3" href="[[rootPath]]view3">Settings</a>
           </iron-selector>
         </app-drawer>
 
