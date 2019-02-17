@@ -32,6 +32,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: rotate(30deg);
           display: var(--elephant-display, none);
+          pointer-events:none; 
         }
         .Pawn{
           position: absolute;
@@ -40,6 +41,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: rotate(30deg);
           display: var(--pawn-display, none);
+          pointer-events:none; 
         }
         .Castle{
           position: absolute;
@@ -48,6 +50,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: rotate(30deg);
           display: var(--castle-display, none);
+          pointer-events:none; 
         }
         .Queen{
           position: absolute;
@@ -56,6 +59,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: rotate(30deg);
           display: var(--queen-display, none);
+          pointer-events:none; 
         }
         .King{
           position: absolute;
@@ -64,6 +68,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: rotate(30deg);
           display: var(--king-display, none);
+          pointer-events:none; 
         }
       </style>
 
