@@ -258,14 +258,14 @@ class OneHex extends PolymerElement {
   }
   _light(){
       if(this.move == this.position || this.light == this.position){
-        this.updateStyles({'--fill-color': 'yellow'});
+        this.updateStyles({'--fill-color': '#D8DA77'});
       } else {
         this._position();
       }
   }
   _move(){
     if(this.move == this.position || this.light == this.position){
-      this.updateStyles({'--fill-color': 'yellow'});
+      this.updateStyles({'--fill-color': '#D8DA77'});
     } else {
       this._position();
     }
@@ -295,6 +295,7 @@ class OneHex extends PolymerElement {
     }
   }
   _click(){
+    console.log(this.position);
     const loc = this.position;
     const tok = this.state;
     this.selected = `${loc}-${tok}`;

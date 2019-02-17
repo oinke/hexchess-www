@@ -18,6 +18,7 @@ class MyView1 extends PolymerElement {
           top: -100px;
           transform-origin: center;
           transform: var(--rotate-board);
+          pointer-events:none;  
         }
         one-hex {
           width: 150px;
@@ -27,8 +28,12 @@ class MyView1 extends PolymerElement {
         button {
           z-index: 9999;
           display: block;
-          width: 100px;
-          height: 40px;
+          width: 200px;
+          height: 44px;
+          font-size: 16px;
+          border-radius: 4px;
+          padding: 12px;
+          color: #C3C3C3;
         }
         a {
           color: cornflowerblue;
@@ -36,7 +41,14 @@ class MyView1 extends PolymerElement {
         .top-area{
           height: 120px;
           display: block;
+        }
+        .top-area button{
           cursor: pointer;
+          color: #4B4B4B;
+          font-weight: 700;
+          border: 1px solid #C3C3C3;
+          z-index: 9999;
+
         }
 
       </style>
@@ -217,6 +229,7 @@ class MyView1 extends PolymerElement {
    }
 
    _postMove(){
+    console.log('sending')
     const url = localStorage.getItem('postMove');
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
