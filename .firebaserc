@@ -1,5 +1,6 @@
 {
   "projects": {
-    "firebase": "hexchess-77fb2"
+    "firebase": "hexchess-77fb2",
+    "default": "hexchess-77fb2"
   }
 }
