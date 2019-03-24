@@ -10,6 +10,7 @@ class MyView1 extends PolymerElement {
         :host {
           display: block;
           padding: 10px;
+          transform: scale(0.9)
         }
         .board {
           position: relative;
@@ -67,6 +68,21 @@ class MyView1 extends PolymerElement {
       </div>
 
       <div class="board">
+
+        <one-hex class="WV_01" position="WV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_01]]"></one-hex>
+        <one-hex class="WV_02" position="WV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_02]]"></one-hex>
+        <one-hex class="WV_03" position="WV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_03]]"></one-hex>
+        <one-hex class="WV_04" position="WV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_04]]"></one-hex>
+        <one-hex class="WV_05" position="WV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_05]]"></one-hex>
+        <one-hex class="WV_06" position="WV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_06]]"></one-hex>
+        <one-hex class="WV_07" position="WV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_07]]"></one-hex>
+        <one-hex class="WV_08" position="WV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_08]]"></one-hex>
+        <one-hex class="WV_09" position="WV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_09]]"></one-hex>
+        <one-hex class="WV_10" position="WV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_10]]"></one-hex>
+        <one-hex class="WV_11" position="WV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_11]]"></one-hex>
+        <one-hex class="WV_12" position="WV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_12]]"></one-hex>
+        <one-hex class="WV_13" position="WV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_13]]"></one-hex>
+
         <one-hex class="P5_P3" position="P5_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P3]]"></one-hex>
         <one-hex class="P5_P2" position="P5_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P2]]"></one-hex>
         <one-hex class="P5_P1" position="P5_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P1]]"></one-hex>
@@ -111,6 +127,22 @@ class MyView1 extends PolymerElement {
         <one-hex class="P1_N2" position="P1_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N2]]"></one-hex>
         <one-hex class="P1_N3" position="P1_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N3]]"></one-hex>
         <one-hex class="P1_N4" position="P1_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N4]]"></one-hex>
+
+
+        <one-hex class="BV_01" position="BV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_01]]"></one-hex>
+        <one-hex class="BV_02" position="BV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_02]]"></one-hex>
+        <one-hex class="BV_03" position="BV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_03]]"></one-hex>
+        <one-hex class="BV_04" position="BV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_04]]"></one-hex>
+        <one-hex class="BV_05" position="BV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_05]]"></one-hex>
+        <one-hex class="BV_06" position="BV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_06]]"></one-hex>
+        <one-hex class="BV_07" position="BV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_07]]"></one-hex>
+        <one-hex class="BV_08" position="BV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_08]]"></one-hex>
+        <one-hex class="BV_09" position="BV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_09]]"></one-hex>
+        <one-hex class="BV_10" position="BV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_10]]"></one-hex>
+        <one-hex class="BV_11" position="BV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_11]]"></one-hex>
+        <one-hex class="BV_12" position="BV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_12]]"></one-hex>
+        <one-hex class="BV_13" position="BV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_13]]"></one-hex>
+   
 
         <one-hex class="N0_P5" position="N0_P5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P5]]"></one-hex>
         <one-hex class="N0_P4" position="N0_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P4]]"></one-hex>
@@ -168,6 +200,20 @@ class MyView1 extends PolymerElement {
         <one-hex class="N5_N0" position="N5_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N0]]"></one-hex>
         <one-hex class="N5_N1" position="N5_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N1]]"></one-hex>
         <one-hex class="N5_N2" position="N5_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N2]]"></one-hex>
+
+        <one-hex class="TV_01" position="TV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_01]]"></one-hex>
+        <one-hex class="TV_02" position="TV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_02]]"></one-hex>
+        <one-hex class="TV_03" position="TV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_03]]"></one-hex>
+        <one-hex class="TV_04" position="TV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_04]]"></one-hex>
+        <one-hex class="TV_05" position="TV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_05]]"></one-hex>
+        <one-hex class="TV_06" position="TV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_06]]"></one-hex>
+        <one-hex class="TV_07" position="TV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_07]]"></one-hex>
+        <one-hex class="TV_08" position="TV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_08]]"></one-hex>
+        <one-hex class="TV_09" position="TV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_09]]"></one-hex>
+        <one-hex class="TV_10" position="TV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_10]]"></one-hex>
+        <one-hex class="TV_11" position="TV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_11]]"></one-hex>
+        <one-hex class="TV_12" position="TV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_12]]"></one-hex>
+        <one-hex class="TV_13" position="TV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_13]]"></one-hex>
       </div>
       
     `;
@@ -204,33 +250,32 @@ class MyView1 extends PolymerElement {
 
   ready() {
     super.ready();
-    const url = localStorage.getItem('getBoard');
     const gameId = localStorage.getItem('gameId');
-    const data = {gameId};
+    const url = `https://ladybug.international/Move/Board?gameid=${gameId}`;
     setInterval(() => { 
       fetch(url, {
         method: 'GET',
-        body: JSON.stringify(data),
         headers: {'Content-Type': 'application/json'},
       })
           .then((response) => {
             return response.json();
           })
           .then((response) => {
-            console.log(`Server replied with ${JSON.stringify(response)}`)
-            if(response && response.board){
-              this._renderBoard(response.board);
+            console.log(`Server replied with ${response}`)
+            if(response){
+              this._renderBoard(response);
             }
           })
-          .catch((error)=>{
-            console.log(`GET Board Endpoint error ${JSON.stringify(error)}`)
+          .catch((error) => {
+            if (error) {
+              console.log(`GET Board Endpoint error ${error}`);
+            }
           })
-     }, 1000);
+     }, 10000);
    }
 
    _postMove(){
-    console.log('sending')
-    const url = localStorage.getItem('postMove');
+    const url = `https://ladybug.international/Move/Pieces`
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
     const moveFrom = this.postFrom;
@@ -297,17 +342,281 @@ class MyView1 extends PolymerElement {
     this._start();
   }
   _start(){
-     const start = [{loc:'P5_P3', tok: 'XX'}, {loc:'P5_P2', tok: 'WC'}, {loc:'P5_P1', tok: 'WQ'}, {loc:'P5_N0', tok: 'WK'}, {loc:'P5_N1', tok: 'WC'}, {loc:'P5_N2', tok: 'XX'}, {loc:'P4_P3', tok: 'XX'}, {loc:'P4_P2', tok: 'XX'}, {loc:'P4_P1', tok: 'WE'}, {loc:'P4_N0', tok: 'WE'}, {loc:'P4_N1', tok: 'WE'}, {loc:'P4_N2', tok: 'XX'}, {loc:'P4_N3', tok: 'XX'}, {loc:'P3_P4', tok: 'XX'}, {loc:'P3_P3', tok: 'XX'}, {loc:'P3_P2', tok: 'XX'}, {loc:'P3_P1', tok: 'WP'}, {loc:'P3_N0', tok: 'WP'}, {loc:'P3_N1', tok: 'XX'}, {loc:'P3_N2', tok: 'XX'}, {loc:'P3_N3', tok: 'XX'}, {loc:'P2_P4', tok: 'XX'}, {loc:'P2_P3', tok: 'XX'}, {loc:'P2_P2', tok: 'XX'}, {loc:'P2_P1', tok: 'XX'}, {loc:'P2_N0', tok: 'WP'}, {loc:'P2_N1', tok: 'XX'}, {loc:'P2_N2', tok: 'XX'}, {loc:'P2_N3', tok: 'XX'}, {loc:'P2_N4', tok: 'XX'}, {loc:'P1_P5', tok: 'XX'}, {loc:'P1_P4', tok: 'XX'}, {loc:'P1_P3', tok: 'XX'}, {loc:'P1_P2', tok: 'XX'}, {loc:'P1_P1', tok: 'XX'}, {loc:'P1_N0', tok: 'XX'}, {loc:'P1_N1', tok: 'XX'}, {loc:'P1_N2', tok: 'XX'}, {loc:'P1_N3', tok: 'XX'}, {loc:'P1_N4', tok: 'XX'}, {loc:'N0_P5', tok: 'XX'}, {loc:'N0_P4', tok: 'XX'}, {loc:'N0_P3', tok: 'XX'}, {loc:'N0_P2', tok: 'XX'}, {loc:'N0_P1', tok: 'XX'}, {loc:'N0_N0', tok: 'XX'}, {loc:'N0_N1', tok: 'XX'}, {loc:'N0_N2', tok: 'XX'}, {loc:'N0_N3', tok: 'XX'}, {loc:'N0_N4', tok: 'XX'}, {loc:'N0_N5', tok: 'XX'}, {loc:'N1_P5', tok: 'BC'}, {loc:'N1_P4', tok: 'BE'}, {loc:'N1_P3', tok: 'BP'}, {loc:'N1_P2', tok: 'BP'}, {loc:'N1_P1', tok: 'XX'}, {loc:'N1_N0', tok: 'XX'}, {loc:'N1_N1', tok: 'TP'}, {loc:'N1_N2', tok: 'TP'}, {loc:'N1_N3', tok: 'TE'}, {loc:'N1_N4', tok: 'TC'}, {loc:'N2_P4', tok: 'BK'}, {loc:'N2_P3', tok: 'BE'}, {loc:'N2_P2', tok: 'BP'}, {loc:'N2_P1', tok: 'XX'}, {loc:'N2_N0', tok: 'XX'}, {loc:'N2_N1', tok: 'XX'}, {loc:'N2_N2', tok: 'TP'}, {loc:'N2_N3', tok: 'TE'}, {loc:'N2_N4', tok: 'TK'}, {loc:'N3_P4', tok: 'BQ'}, {loc:'N3_P3', tok: 'BE'}, {loc:'N3_P2', tok: 'XX'}, {loc:'N3_P1', tok: 'XX'}, {loc:'N3_N0', tok: 'XX'}, {loc:'N3_N1', tok: 'XX'}, {loc:'N3_N2', tok: 'TE'}, {loc:'N3_N3', tok: 'TQ'}, {loc:'N4_P3', tok: 'BC'}, {loc:'N4_P2', tok: 'XX'}, {loc:'N4_P1', tok: 'XX'}, {loc:'N4_N0', tok: 'XX'}, {loc:'N4_N1', tok: 'XX'}, {loc:'N4_N2', tok: 'XX'}, {loc:'N4_N3', tok: 'TC'}, {loc:'N5_P3', tok: 'XX'}, {loc:'N5_P2', tok: 'XX'}, {loc:'N5_P1', tok: 'XX'}, {loc:'N5_N0', tok: 'XX'}, {loc:'N5_N1', tok: 'XX'}, {loc:'N5_N2', tok: 'XX'}];
+     const start = [
+        {loc:'P5_P3', tok: 'XX'}, 
+        {loc:'P5_P2', tok: 'WC'}, 
+        {loc:'P5_P1', tok: 'WQ'}, 
+        {loc:'P5_N0', tok: 'WK'}, 
+        {loc:'P5_N1', tok: 'WC'}, 
+        {loc:'P5_N2', tok: 'XX'}, 
+        {loc:'P4_P3', tok: 'XX'}, 
+        {loc:'P4_P2', tok: 'XX'}, 
+        {loc:'P4_P1', tok: 'WE'}, 
+        {loc:'P4_N0', tok: 'WE'}, 
+        {loc:'P4_N1', tok: 'WE'}, 
+        {loc:'P4_N2', tok: 'XX'}, 
+        {loc:'P4_N3', tok: 'XX'}, 
+        {loc:'P3_P4', tok: 'XX'}, 
+        {loc:'P3_P3', tok: 'XX'}, 
+        {loc:'P3_P2', tok: 'XX'}, 
+        {loc:'P3_P1', tok: 'WP'}, 
+        {loc:'P3_N0', tok: 'WP'}, 
+        {loc:'P3_N1', tok: 'XX'}, 
+        {loc:'P3_N2', tok: 'XX'}, 
+        {loc:'P3_N3', tok: 'XX'}, 
+        {loc:'P2_P4', tok: 'XX'}, 
+        {loc:'P2_P3', tok: 'XX'}, 
+        {loc:'P2_P2', tok: 'XX'}, 
+        {loc:'P2_P1', tok: 'XX'}, 
+        {loc:'P2_N0', tok: 'WP'}, 
+        {loc:'P2_N1', tok: 'XX'}, 
+        {loc:'P2_N2', tok: 'XX'}, 
+        {loc:'P2_N3', tok: 'XX'}, 
+        {loc:'P2_N4', tok: 'XX'}, 
+        {loc:'P1_P5', tok: 'XX'}, 
+        {loc:'P1_P4', tok: 'XX'}, 
+        {loc:'P1_P3', tok: 'XX'}, 
+        {loc:'P1_P2', tok: 'XX'}, 
+        {loc:'P1_P1', tok: 'XX'}, 
+        {loc:'P1_N0', tok: 'XX'}, 
+        {loc:'P1_N1', tok: 'XX'}, 
+        {loc:'P1_N2', tok: 'XX'}, 
+        {loc:'P1_N3', tok: 'XX'}, 
+        {loc:'P1_N4', tok: 'XX'}, 
+        {loc:'N0_P5', tok: 'XX'}, 
+        {loc:'N0_P4', tok: 'XX'}, 
+        {loc:'N0_P3', tok: 'XX'}, 
+        {loc:'N0_P2', tok: 'XX'}, 
+        {loc:'N0_P1', tok: 'XX'}, 
+        {loc:'N0_N0', tok: 'XX'}, 
+        {loc:'N0_N1', tok: 'XX'}, 
+        {loc:'N0_N2', tok: 'XX'}, 
+        {loc:'N0_N3', tok: 'XX'}, 
+        {loc:'N0_N4', tok: 'XX'}, 
+        {loc:'N0_N5', tok: 'XX'}, 
+        {loc:'N1_P5', tok: 'BC'}, 
+        {loc:'N1_P4', tok: 'BE'}, 
+        {loc:'N1_P3', tok: 'BP'}, 
+        {loc:'N1_P2', tok: 'BP'}, 
+        {loc:'N1_P1', tok: 'XX'}, 
+        {loc:'N1_N0', tok: 'XX'}, 
+        {loc:'N1_N1', tok: 'TP'}, 
+        {loc:'N1_N2', tok: 'TP'}, 
+        {loc:'N1_N3', tok: 'TE'}, 
+        {loc:'N1_N4', tok: 'TC'}, 
+        {loc:'N2_P4', tok: 'BK'}, 
+        {loc:'N2_P3', tok: 'BE'}, 
+        {loc:'N2_P2', tok: 'BP'}, 
+        {loc:'N2_P1', tok: 'XX'}, 
+        {loc:'N2_N0', tok: 'XX'}, 
+        {loc:'N2_N1', tok: 'XX'}, 
+        {loc:'N2_N2', tok: 'TP'}, 
+        {loc:'N2_N3', tok: 'TE'}, 
+        {loc:'N2_N4', tok: 'TK'}, 
+        {loc:'N3_P4', tok: 'BQ'}, 
+        {loc:'N3_P3', tok: 'BE'}, 
+        {loc:'N3_P2', tok: 'XX'}, 
+        {loc:'N3_P1', tok: 'XX'}, 
+        {loc:'N3_N0', tok: 'XX'}, 
+        {loc:'N3_N1', tok: 'XX'}, 
+        {loc:'N3_N2', tok: 'TE'}, 
+        {loc:'N3_N3', tok: 'TQ'}, 
+        {loc:'N4_P3', tok: 'BC'}, 
+        {loc:'N4_P2', tok: 'XX'}, 
+        {loc:'N4_P1', tok: 'XX'}, 
+        {loc:'N4_N0', tok: 'XX'}, 
+        {loc:'N4_N1', tok: 'XX'}, 
+        {loc:'N4_N2', tok: 'XX'}, 
+        {loc:'N4_N3', tok: 'TC'}, 
+        {loc:'N5_P3', tok: 'XX'}, 
+        {loc:'N5_P2', tok: 'XX'}, 
+        {loc:'N5_P1', tok: 'XX'}, 
+        {loc:'N5_N0', tok: 'XX'}, 
+        {loc:'N5_N1', tok: 'XX'}, 
+        {loc:'N5_N2', tok: 'XX'},
+        {loc:'WV_01', tok: 'XX'}, 
+        {loc:'WV_02', tok: 'XX'}, 
+        {loc:'WV_03', tok: 'XX'}, 
+        {loc:'WV_04', tok: 'XX'}, 
+        {loc:'WV_05', tok: 'XX'}, 
+        {loc:'WV_06', tok: 'XX'}, 
+        {loc:'WV_07', tok: 'XX'}, 
+        {loc:'WV_08', tok: 'XX'}, 
+        {loc:'WV_09', tok: 'XX'}, 
+        {loc:'WV_10', tok: 'XX'}, 
+        {loc:'WV_11', tok: 'XX'}, 
+        {loc:'WV_12', tok: 'XX'}, 
+        {loc:'WV_13', tok: 'XX'},
+        {loc:'TV_01', tok: 'XX'}, 
+        {loc:'TV_02', tok: 'XX'}, 
+        {loc:'TV_03', tok: 'XX'}, 
+        {loc:'TV_04', tok: 'XX'}, 
+        {loc:'TV_05', tok: 'XX'}, 
+        {loc:'TV_06', tok: 'XX'}, 
+        {loc:'TV_07', tok: 'XX'}, 
+        {loc:'TV_08', tok: 'XX'}, 
+        {loc:'TV_09', tok: 'XX'}, 
+        {loc:'TV_10', tok: 'XX'}, 
+        {loc:'TV_11', tok: 'XX'}, 
+        {loc:'TV_12', tok: 'XX'}, 
+        {loc:'TV_13', tok: 'XX'},
+        {loc:'BV_01', tok: 'XX'}, 
+        {loc:'BV_02', tok: 'XX'}, 
+        {loc:'BV_03', tok: 'XX'}, 
+        {loc:'BV_04', tok: 'XX'}, 
+        {loc:'BV_05', tok: 'XX'}, 
+        {loc:'BV_06', tok: 'XX'}, 
+        {loc:'BV_07', tok: 'XX'}, 
+        {loc:'BV_08', tok: 'XX'}, 
+        {loc:'BV_09', tok: 'XX'}, 
+        {loc:'BV_10', tok: 'XX'}, 
+        {loc:'BV_11', tok: 'XX'}, 
+        {loc:'BV_12', tok: 'XX'}, 
+        {loc:'BV_13', tok: 'XX'}
+      ];
      this._renderBoard(start);
     }
 
   _clear(){
-    const clear = [{loc:'P5_P3', tok: 'XX'}, {loc:'P5_P2', tok: 'XX'}, {loc:'P5_P1', tok: 'XX'}, {loc:'P5_N0', tok: 'XX'}, {loc:'P5_N1', tok: 'XX'}, {loc:'P5_N2', tok: 'XX'}, {loc:'P4_P3', tok: 'XX'}, {loc:'P4_P2', tok: 'XX'}, {loc:'P4_P1', tok: 'XX'}, {loc:'P4_N0', tok: 'XX'}, {loc:'P4_N1', tok: 'XX'}, {loc:'P4_N2', tok: 'XX'}, {loc:'P4_N3', tok: 'XX'}, {loc:'P3_P4', tok: 'XX'}, {loc:'P3_P3', tok: 'XX'}, {loc:'P3_P2', tok: 'XX'}, {loc:'P3_P1', tok: 'XX'}, {loc:'P3_N0', tok: 'XX'}, {loc:'P3_N1', tok: 'XX'}, {loc:'P3_N2', tok: 'XX'}, {loc:'P3_N3', tok: 'XX'}, {loc:'P2_P4', tok: 'XX'}, {loc:'P2_P3', tok: 'XX'}, {loc:'P2_P2', tok: 'XX'}, {loc:'P2_P1', tok: 'XX'}, {loc:'P2_N0', tok: 'XX'}, {loc:'P2_N1', tok: 'XX'}, {loc:'P2_N2', tok: 'XX'}, {loc:'P2_N3', tok: 'XX'}, {loc:'P2_N4', tok: 'XX'}, {loc:'P1_P5', tok: 'XX'}, {loc:'P1_P4', tok: 'XX'}, {loc:'P1_P3', tok: 'XX'}, {loc:'P1_P2', tok: 'XX'}, {loc:'P1_P1', tok: 'XX'}, {loc:'P1_N0', tok: 'XX'}, {loc:'P1_N1', tok: 'XX'}, {loc:'P1_N2', tok: 'XX'}, {loc:'P1_N3', tok: 'XX'}, {loc:'P1_N4', tok: 'XX'}, {loc:'N0_P5', tok: 'XX'}, {loc:'N0_P4', tok: 'XX'}, {loc:'N0_P3', tok: 'XX'}, {loc:'N0_P2', tok: 'XX'}, {loc:'N0_P1', tok: 'XX'}, {loc:'N0_N0', tok: 'XX'}, {loc:'N0_N1', tok: 'XX'}, {loc:'N0_N2', tok: 'XX'}, {loc:'N0_N3', tok: 'XX'}, {loc:'N0_N4', tok: 'XX'}, {loc:'N0_N5', tok: 'XX'}, {loc:'N1_P5', tok: 'XX'}, {loc:'N1_P4', tok: 'XX'}, {loc:'N1_P3', tok: 'XX'}, {loc:'N1_P2', tok: 'XX'}, {loc:'N1_P1', tok: 'XX'}, {loc:'N1_N0', tok: 'XX'}, {loc:'N1_N1', tok: 'XX'}, {loc:'N1_N2', tok: 'XX'}, {loc:'N1_N3', tok: 'XX'}, {loc:'N1_N4', tok: 'XX'}, {loc:'N2_P4', tok: 'XX'}, {loc:'N2_P3', tok: 'XX'}, {loc:'N2_P2', tok: 'XX'}, {loc:'N2_P1', tok: 'XX'}, {loc:'N2_N0', tok: 'XX'}, {loc:'N2_N1', tok: 'XX'}, {loc:'N2_N2', tok: 'XX'}, {loc:'N2_N3', tok: 'XX'}, {loc:'N2_N4', tok: 'XX'}, {loc:'N3_P4', tok: 'XX'}, {loc:'N3_P3', tok: 'XX'}, {loc:'N3_P2', tok: 'XX'}, {loc:'N3_P1', tok: 'XX'}, {loc:'N3_N0', tok: 'XX'}, {loc:'N3_N1', tok: 'XX'}, {loc:'N3_N2', tok: 'XX'}, {loc:'N3_N3', tok: 'XX'}, {loc:'N4_P3', tok: 'XX'}, {loc:'N4_P2', tok: 'XX'}, {loc:'N4_P1', tok: 'XX'}, {loc:'N4_N0', tok: 'XX'}, {loc:'N4_N1', tok: 'XX'}, {loc:'N4_N2', tok: 'XX'}, {loc:'N4_N3', tok: 'XX'}, {loc:'N5_P3', tok: 'XX'}, {loc:'N5_P2', tok: 'XX'}, {loc:'N5_P1', tok: 'XX'}, {loc:'N5_N0', tok: 'XX'}, {loc:'N5_N1', tok: 'XX'}, {loc:'N5_N2', tok: 'XX'}];
+    const clear = [
+      {loc:'P5_P3', tok: 'XX'}, 
+      {loc:'P5_P2', tok: 'XX'}, 
+      {loc:'P5_P1', tok: 'XX'}, 
+      {loc:'P5_N0', tok: 'XX'}, 
+      {loc:'P5_N1', tok: 'XX'}, 
+      {loc:'P5_N2', tok: 'XX'}, 
+      {loc:'P4_P3', tok: 'XX'}, 
+      {loc:'P4_P2', tok: 'XX'}, 
+      {loc:'P4_P1', tok: 'XX'}, 
+      {loc:'P4_N0', tok: 'XX'}, 
+      {loc:'P4_N1', tok: 'XX'}, 
+      {loc:'P4_N2', tok: 'XX'}, 
+      {loc:'P4_N3', tok: 'XX'}, 
+      {loc:'P3_P4', tok: 'XX'}, 
+      {loc:'P3_P3', tok: 'XX'}, 
+      {loc:'P3_P2', tok: 'XX'}, 
+      {loc:'P3_P1', tok: 'XX'}, 
+      {loc:'P3_N0', tok: 'XX'}, 
+      {loc:'P3_N1', tok: 'XX'}, 
+      {loc:'P3_N2', tok: 'XX'}, 
+      {loc:'P3_N3', tok: 'XX'}, 
+      {loc:'P2_P4', tok: 'XX'}, 
+      {loc:'P2_P3', tok: 'XX'}, 
+      {loc:'P2_P2', tok: 'XX'}, 
+      {loc:'P2_P1', tok: 'XX'}, 
+      {loc:'P2_N0', tok: 'XX'}, 
+      {loc:'P2_N1', tok: 'XX'}, 
+      {loc:'P2_N2', tok: 'XX'}, 
+      {loc:'P2_N3', tok: 'XX'}, 
+      {loc:'P2_N4', tok: 'XX'}, 
+      {loc:'P1_P5', tok: 'XX'}, 
+      {loc:'P1_P4', tok: 'XX'}, 
+      {loc:'P1_P3', tok: 'XX'}, 
+      {loc:'P1_P2', tok: 'XX'}, 
+      {loc:'P1_P1', tok: 'XX'}, 
+      {loc:'P1_N0', tok: 'XX'}, 
+      {loc:'P1_N1', tok: 'XX'}, 
+      {loc:'P1_N2', tok: 'XX'}, 
+      {loc:'P1_N3', tok: 'XX'}, 
+      {loc:'P1_N4', tok: 'XX'}, 
+      {loc:'N0_P5', tok: 'XX'}, 
+      {loc:'N0_P4', tok: 'XX'}, 
+      {loc:'N0_P3', tok: 'XX'}, 
+      {loc:'N0_P2', tok: 'XX'}, 
+      {loc:'N0_P1', tok: 'XX'}, 
+      {loc:'N0_N0', tok: 'XX'}, 
+      {loc:'N0_N1', tok: 'XX'}, 
+      {loc:'N0_N2', tok: 'XX'}, 
+      {loc:'N0_N3', tok: 'XX'}, 
+      {loc:'N0_N4', tok: 'XX'}, 
+      {loc:'N0_N5', tok: 'XX'}, 
+      {loc:'N1_P5', tok: 'XX'}, 
+      {loc:'N1_P4', tok: 'XX'}, 
+      {loc:'N1_P3', tok: 'XX'}, 
+      {loc:'N1_P2', tok: 'XX'}, 
+      {loc:'N1_P1', tok: 'XX'}, 
+      {loc:'N1_N0', tok: 'XX'}, 
+      {loc:'N1_N1', tok: 'XX'}, 
+      {loc:'N1_N2', tok: 'XX'}, 
+      {loc:'N1_N3', tok: 'XX'}, 
+      {loc:'N1_N4', tok: 'XX'}, 
+      {loc:'N2_P4', tok: 'XX'}, 
+      {loc:'N2_P3', tok: 'XX'}, 
+      {loc:'N2_P2', tok: 'XX'}, 
+      {loc:'N2_P1', tok: 'XX'}, 
+      {loc:'N2_N0', tok: 'XX'}, 
+      {loc:'N2_N1', tok: 'XX'}, 
+      {loc:'N2_N2', tok: 'XX'}, 
+      {loc:'N2_N3', tok: 'XX'}, 
+      {loc:'N2_N4', tok: 'XX'}, 
+      {loc:'N3_P4', tok: 'XX'}, 
+      {loc:'N3_P3', tok: 'XX'}, 
+      {loc:'N3_P2', tok: 'XX'}, 
+      {loc:'N3_P1', tok: 'XX'}, 
+      {loc:'N3_N0', tok: 'XX'}, 
+      {loc:'N3_N1', tok: 'XX'}, 
+      {loc:'N3_N2', tok: 'XX'}, 
+      {loc:'N3_N3', tok: 'XX'}, 
+      {loc:'N4_P3', tok: 'XX'}, 
+      {loc:'N4_P2', tok: 'XX'}, 
+      {loc:'N4_P1', tok: 'XX'}, 
+      {loc:'N4_N0', tok: 'XX'}, 
+      {loc:'N4_N1', tok: 'XX'}, 
+      {loc:'N4_N2', tok: 'XX'}, 
+      {loc:'N4_N3', tok: 'XX'}, 
+      {loc:'N5_P3', tok: 'XX'}, 
+      {loc:'N5_P2', tok: 'XX'}, 
+      {loc:'N5_P1', tok: 'XX'}, 
+      {loc:'N5_N0', tok: 'XX'}, 
+      {loc:'N5_N1', tok: 'XX'}, 
+      {loc:'N5_N2', tok: 'XX'},
+      {loc:'WV_01', tok: 'XX'}, 
+      {loc:'WV_02', tok: 'XX'}, 
+      {loc:'WV_03', tok: 'XX'}, 
+      {loc:'WV_04', tok: 'XX'}, 
+      {loc:'WV_05', tok: 'XX'}, 
+      {loc:'WV_06', tok: 'XX'}, 
+      {loc:'WV_07', tok: 'XX'}, 
+      {loc:'WV_08', tok: 'XX'}, 
+      {loc:'WV_09', tok: 'XX'}, 
+      {loc:'WV_10', tok: 'XX'}, 
+      {loc:'WV_11', tok: 'XX'}, 
+      {loc:'WV_12', tok: 'XX'}, 
+      {loc:'WV_13', tok: 'XX'},
+      {loc:'TV_01', tok: 'XX'}, 
+      {loc:'TV_02', tok: 'XX'}, 
+      {loc:'TV_03', tok: 'XX'}, 
+      {loc:'TV_04', tok: 'XX'}, 
+      {loc:'TV_05', tok: 'XX'}, 
+      {loc:'TV_06', tok: 'XX'}, 
+      {loc:'TV_07', tok: 'XX'}, 
+      {loc:'TV_08', tok: 'XX'}, 
+      {loc:'TV_09', tok: 'XX'}, 
+      {loc:'TV_10', tok: 'XX'}, 
+      {loc:'TV_11', tok: 'XX'}, 
+      {loc:'TV_12', tok: 'XX'}, 
+      {loc:'TV_13', tok: 'XX'},
+      {loc:'BV_01', tok: 'XX'}, 
+      {loc:'BV_02', tok: 'XX'}, 
+      {loc:'BV_03', tok: 'XX'}, 
+      {loc:'BV_04', tok: 'XX'}, 
+      {loc:'BV_05', tok: 'XX'}, 
+      {loc:'BV_06', tok: 'XX'}, 
+      {loc:'BV_07', tok: 'XX'}, 
+      {loc:'BV_08', tok: 'XX'}, 
+      {loc:'BV_09', tok: 'XX'}, 
+      {loc:'BV_10', tok: 'XX'}, 
+      {loc:'BV_11', tok: 'XX'}, 
+      {loc:'BV_12', tok: 'XX'}, 
+      {loc:'BV_13', tok: 'XX'}
+    ];
     this._renderBoard(clear);
   }
 
   _renderBoard(arr){
     for (var i = 0; i < arr.length; i++) {
+      console.log(arr[i].loc)
+      console.log(arr[i].tok)
       this[arr[i].loc] = arr[i].tok;
     }
   }
