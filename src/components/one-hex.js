@@ -295,19 +295,20 @@ class OneHex extends PolymerElement {
     }
   }
   _click(){
-    console.log(this.position);
     const loc = this.position;
-    const tok = this.state;
+    const tok = this.state.tok;
     this.selected = `${loc}-${tok}`;
+    console.log(this.selected)
   }
   _state(){
-    if(this.state === 'XX'){
+    this.updateStyles({'--fill-color': `rgba(${this.state.hue})`});
+    if(this.state.tok === 'XX'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
       this.updateStyles({'--queen-display': 'none'});
       this.updateStyles({'--king-display': 'none'});
-    } else if (this.state === 'BE'){
+    } else if (this.state.tok === 'BE'){
       this.updateStyles({'--elephant-display': 'block'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -315,7 +316,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#000000';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'BP'){
+    } else if (this.state.tok === 'BP'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'block'});
       this.updateStyles({'--castle-display': 'none'});
@@ -323,7 +324,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#000000';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'BC'){
+    } else if (this.state.tok === 'BC'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'block'});
@@ -331,7 +332,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#000000';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'BQ'){
+    } else if (this.state.tok === 'BQ'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -339,7 +340,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#000000';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'BK'){
+    } else if (this.state.tok === 'BK'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -348,7 +349,7 @@ class OneHex extends PolymerElement {
       this.tokenColor = '#000000';
       this.iconColor = '#FFFFFF';
     }
-    if (this.state === 'WE'){
+    if (this.state.tok === 'WE'){
       this.updateStyles({'--elephant-display': 'block'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -356,7 +357,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#FFFFFF';
       this.iconColor = '#000000';
-    } else if (this.state === 'WP'){
+    } else if (this.state.tok === 'WP'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'block'});
       this.updateStyles({'--castle-display': 'none'});
@@ -364,7 +365,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#FFFFFF';
       this.iconColor = '#000000';
-    } else if (this.state === 'WC'){
+    } else if (this.state.tok === 'WC'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'block'});
@@ -372,7 +373,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#FFFFFF';
       this.iconColor = '#000000';
-    } else if (this.state === 'WQ'){
+    } else if (this.state.tok === 'WQ'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -380,7 +381,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#FFFFFF';
       this.iconColor = '#000000';
-    } else if (this.state === 'WK'){
+    } else if (this.state.tok === 'WK'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -389,7 +390,7 @@ class OneHex extends PolymerElement {
       this.tokenColor = '#FFFFFF';
       this.iconColor = '#000000';
     }
-    if (this.state === 'TE'){
+    if (this.state.tok === 'TE'){
       this.updateStyles({'--elephant-display': 'block'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -397,7 +398,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#924A2E';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'TP'){
+    } else if (this.state.tok === 'TP'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'block'});
       this.updateStyles({'--castle-display': 'none'});
@@ -405,7 +406,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#924A2E';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'TC'){
+    } else if (this.state.tok === 'TC'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'block'});
@@ -413,7 +414,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#924A2E';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'TQ'){
+    } else if (this.state.tok === 'TQ'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});
@@ -421,7 +422,7 @@ class OneHex extends PolymerElement {
       this.updateStyles({'--king-display': 'none'});
       this.tokenColor = '#924A2E';
       this.iconColor = '#FFFFFF';
-    } else if (this.state === 'TK'){
+    } else if (this.state.tok === 'TK'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
       this.updateStyles({'--castle-display': 'none'});

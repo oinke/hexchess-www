@@ -13,19 +13,19 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
       }
 
-      .WV_01 {transform: translate(980px, 293px) scale(0.7); opacity: 0.5}
-      .WV_02 {transform: translate(980px, 354px) scale(0.7); opacity: 0.5}
-      .WV_03 {transform: translate(980px, 415px) scale(0.7); opacity: 0.5}
-      .WV_04 {transform: translate(980px, 476px) scale(0.7); opacity: 0.5}
-      .WV_05 {transform: translate(980px, 537px) scale(0.7); opacity: 0.5}
-      .WV_06 {transform: translate(980px, 598px) scale(0.7); opacity: 0.5}
-      .WV_07 {transform: translate(980px, 659px) scale(0.7); opacity: 0.5}
-      .WV_08 {transform: translate(1033px, 324px) scale(0.7); opacity: 0.5}
-      .WV_09 {transform: translate(1033px, 385px) scale(0.7); opacity: 0.5}
-      .WV_10 {transform: translate(1033px, 446px) scale(0.7); opacity: 0.5}
-      .WV_11 {transform: translate(1033px, 507px) scale(0.7); opacity: 0.5}
-      .WV_12 {transform: translate(1033px, 568px) scale(0.7); opacity: 0.5}
-      .WV_13 {transform: translate(1033px, 629px) scale(0.7); opacity: 0.5}
+      .WV_01 {transform: translate(980px, 293px) scale(0.7)}
+      .WV_02 {transform: translate(980px, 354px) scale(0.7)}
+      .WV_03 {transform: translate(980px, 415px) scale(0.7)}
+      .WV_04 {transform: translate(980px, 476px) scale(0.7)}
+      .WV_05 {transform: translate(980px, 537px) scale(0.7)}
+      .WV_06 {transform: translate(980px, 598px) scale(0.7)}
+      .WV_07 {transform: translate(980px, 659px) scale(0.7)}
+      .WV_08 {transform: translate(1033px, 324px) scale(0.7)}
+      .WV_09 {transform: translate(1033px, 385px) scale(0.7)}
+      .WV_10 {transform: translate(1033px, 446px) scale(0.7)}
+      .WV_11 {transform: translate(1033px, 507px) scale(0.7)}
+      .WV_12 {transform: translate(1033px, 568px) scale(0.7)}
+      .WV_13 {transform: translate(1033px, 629px) scale(0.7)}
 
       .P5_P3 {transform: translate(870px, 283px)}
       .P5_P2 {transform: translate(870px, 370px)}
@@ -72,19 +72,19 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       .P1_N3 {transform: translate(574px, 805px)}
       .P1_N4 {transform: translate(574px, 892px)}
       
-      .BV_01 {transform: translate(414px, -20px) scale(0.7); opacity: 0.5}
-      .BV_02 {transform: translate(362px, 11px) scale(0.7); opacity: 0.5}
-      .BV_03 {transform: translate(310px, 41px) scale(0.7); opacity: 0.5}
-      .BV_04 {transform: translate(259px, 70px) scale(0.7); opacity: 0.5}
-      .BV_05 {transform: translate(206px, 100px) scale(0.7); opacity: 0.5}
-      .BV_06 {transform: translate(154px, 130px) scale(0.7); opacity: 0.5}
-      .BV_07 {transform: translate(101px, 161px) scale(0.7); opacity: 0.5}
-      .BV_08 {transform: translate(361px, -50px) scale(0.7); opacity: 0.5}
-      .BV_09 {transform: translate(309px, -19px) scale(0.7); opacity: 0.5}
-      .BV_10 {transform: translate(257px, 10px) scale(0.7); opacity: 0.5}
-      .BV_11 {transform: translate(206px, 40px) scale(0.7); opacity: 0.5}
-      .BV_12 {transform: translate(155px, 69px) scale(0.7); opacity: 0.5}
-      .BV_13 {transform: translate(102px, 100px) scale(0.7); opacity: 0.5}
+      .BV_01 {transform: translate(414px, -20px) scale(0.7)}
+      .BV_02 {transform: translate(362px, 11px) scale(0.7)}
+      .BV_03 {transform: translate(310px, 41px) scale(0.7)}
+      .BV_04 {transform: translate(259px, 70px) scale(0.7)}
+      .BV_05 {transform: translate(206px, 100px) scale(0.7)}
+      .BV_06 {transform: translate(154px, 130px) scale(0.7)}
+      .BV_07 {transform: translate(101px, 161px) scale(0.7)}
+      .BV_08 {transform: translate(361px, -50px) scale(0.7)}
+      .BV_09 {transform: translate(309px, -19px) scale(0.7)}
+      .BV_10 {transform: translate(257px, 10px) scale(0.7)}
+      .BV_11 {transform: translate(206px, 40px) scale(0.7)}
+      .BV_12 {transform: translate(155px, 69px) scale(0.7)}
+      .BV_13 {transform: translate(102px, 100px) scale(0.7)}
 
       .N0_P5 {transform: translate(500px, 65px)}
       .N0_P4 {transform: translate(500px, 152px)}
@@ -144,19 +144,19 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       .N5_N1 {transform: translate(131px, 631px)}
       .N5_N2 {transform: translate(131px, 718px)}
 
-      .TV_01 {transform: translate(101px, 786px) scale(0.7); opacity: 0.5}
-      .TV_02 {transform: translate(152px, 818px) scale(0.7); opacity: 0.5}
-      .TV_03 {transform: translate(204px, 850px) scale(0.7); opacity: 0.5}
-      .TV_04 {transform: translate(257px, 880px) scale(0.7); opacity: 0.5}
-      .TV_05 {transform: translate(309px, 911px) scale(0.7); opacity: 0.5}
-      .TV_06 {transform: translate(361px, 942px) scale(0.7); opacity: 0.5}
-      .TV_07 {transform: translate(413px, 973px) scale(0.7); opacity: 0.5}
-      .TV_08 {transform: translate(98px, 846px) scale(0.7); opacity: 0.5}
-      .TV_09 {transform: translate(150px, 878px) scale(0.7); opacity: 0.5}
-      .TV_10 {transform: translate(203px, 910px) scale(0.7); opacity: 0.5}
-      .TV_11 {transform: translate(257px, 940px) scale(0.7); opacity: 0.5}
-      .TV_12 {transform: translate(309px, 971px) scale(0.7); opacity: 0.5}
-      .TV_13 {transform: translate(361px, 1002px) scale(0.7); opacity: 0.5}
+      .TV_01 {transform: translate(101px, 786px) scale(0.7)}
+      .TV_02 {transform: translate(152px, 818px) scale(0.7)}
+      .TV_03 {transform: translate(204px, 850px) scale(0.7)}
+      .TV_04 {transform: translate(257px, 880px) scale(0.7)}
+      .TV_05 {transform: translate(309px, 911px) scale(0.7)}
+      .TV_06 {transform: translate(361px, 942px) scale(0.7)}
+      .TV_07 {transform: translate(413px, 973px) scale(0.7)}
+      .TV_08 {transform: translate(98px, 846px) scale(0.7)}
+      .TV_09 {transform: translate(150px, 878px) scale(0.7)}
+      .TV_10 {transform: translate(203px, 910px) scale(0.7)}
+      .TV_11 {transform: translate(257px, 940px) scale(0.7)}
+      .TV_12 {transform: translate(309px, 971px) scale(0.7)}
+      .TV_13 {transform: translate(361px, 1002px) scale(0.7)}
 
 
 
