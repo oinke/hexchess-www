@@ -83,51 +83,50 @@ class MyView1 extends PolymerElement {
         <one-hex class="WV_12" position="WV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_12]]"></one-hex>
         <one-hex class="WV_13" position="WV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_13]]"></one-hex>
 
-        <one-hex class="P5_P3" position="P5_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P3]]"></one-hex>
-        <one-hex class="P5_P2" position="P5_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P2]]"></one-hex>
-        <one-hex class="P5_P1" position="P5_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_P1]]"></one-hex>
-        <one-hex class="P5_N0" position="P5_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_N0]]"></one-hex>
-        <one-hex class="P5_N1" position="P5_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_N1]]"></one-hex>
-        <one-hex class="P5_N2" position="P5_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P5_N2]]"></one-hex>
+        <one-hex class="n0_p5" position="n0_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p5]]"></one-hex>
+        <one-hex class="n1_p5" position="n1_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p5]]"></one-hex>
+        <one-hex class="n2_p5" position="n2_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p5]]"></one-hex>
+        <one-hex class="n3_p5" position="n3_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p5]]"></one-hex>
+        <one-hex class="n4_p5" position="n4_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p5]]"></one-hex>
+        <one-hex class="n5_p5" position="n5_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p5]]"></one-hex>
 
-        <one-hex class="P4_P3" position="P4_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_P3]]"></one-hex>
-        <one-hex class="P4_P2" position="P4_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_P2]]"></one-hex>
-        <one-hex class="P4_P1" position="P4_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_P1]]"></one-hex>
-        <one-hex class="P4_N0" position="P4_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_N0]]"></one-hex>
-        <one-hex class="P4_N1" position="P4_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_N1]]"></one-hex>
-        <one-hex class="P4_N2" position="P4_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_N2]]"></one-hex>
-        <one-hex class="P4_N3" position="P4_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P4_N3]]"></one-hex>
+        <one-hex class="p1_p4" position="p1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p4]]"></one-hex>
+        <one-hex class="n0_p4" position="n0_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p4]]"></one-hex>
+        <one-hex class="n1_p4" position="n1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p4]]"></one-hex>
+        <one-hex class="n2_p4" position="n2_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p4]]"></one-hex>
+        <one-hex class="n3_p4" position="n3_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p4]]"></one-hex>
+        <one-hex class="n4_p4" position="n4_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p4]]"></one-hex>
+        <one-hex class="n5_p4" position="n5_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p4]]"></one-hex>
 
-        <one-hex class="P3_P4" position="P3_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_P4]]"></one-hex>
-        <one-hex class="P3_P3" position="P3_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_P3]]"></one-hex>
-        <one-hex class="P3_P2" position="P3_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_P2]]"></one-hex>
-        <one-hex class="P3_P1" position="P3_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_P1]]"></one-hex>
-        <one-hex class="P3_N0" position="P3_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_N0]]"></one-hex>
-        <one-hex class="P3_N1" position="P3_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_N1]]"></one-hex>
-        <one-hex class="P3_N2" position="P3_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_N2]]"></one-hex>
-        <one-hex class="P3_N3" position="P3_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P3_N3]]"></one-hex>
+        <one-hex class="p2_p3" position="p2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p3]]"></one-hex>
+        <one-hex class="p1_p3" position="p1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p3]]"></one-hex>
+        <one-hex class="n0_p3" position="n0_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p3]]"></one-hex>
+        <one-hex class="n1_p3" position="n1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p3]]"></one-hex>
+        <one-hex class="n2_p3" position="n2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p3]]"></one-hex>
+        <one-hex class="n3_p3" position="n3_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p3]]"></one-hex>
+        <one-hex class="n4_p3" position="n4_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p3]]"></one-hex>
+        <one-hex class="n5_p3" position="n5_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p3]]"></one-hex>
 
-        <one-hex class="P2_P4" position="P2_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_P4]]"></one-hex>
-        <one-hex class="P2_P3" position="P2_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_P3]]"></one-hex>
-        <one-hex class="P2_P2" position="P2_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_P2]]"></one-hex>
-        <one-hex class="P2_P1" position="P2_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_P1]]"></one-hex>
-        <one-hex class="P2_N0" position="P2_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_N0]]"></one-hex>
-        <one-hex class="P2_N1" position="P2_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_N1]]"></one-hex>
-        <one-hex class="P2_N2" position="P2_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_N2]]"></one-hex>
-        <one-hex class="P2_N3" position="P2_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_N3]]"></one-hex>
-        <one-hex class="P2_N4" position="P2_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P2_N4]]"></one-hex>
+        <one-hex class="p3_p2" position="p3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p2]]"></one-hex>
+        <one-hex class="p2_p2" position="p2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p2]]"></one-hex>
+        <one-hex class="p1_p2" position="p1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p2]]"></one-hex>
+        <one-hex class="n0_p2" position="n0_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p2]]"></one-hex>
+        <one-hex class="n1_p2" position="n1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p2]]"></one-hex>
+        <one-hex class="n2_p2" position="n2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p2]]"></one-hex>
+        <one-hex class="n3_p2" position="n3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p2]]"></one-hex>
+        <one-hex class="n4_p2" position="n4_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p2]]"></one-hex>
+        <one-hex class="n5_p2" position="n5_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p2]]"></one-hex>
 
-        <one-hex class="P1_P5" position="P1_P5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_P5]]"></one-hex>
-        <one-hex class="P1_P4" position="P1_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_P4]]"></one-hex>
-        <one-hex class="P1_P3" position="P1_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_P3]]"></one-hex>
-        <one-hex class="P1_P2" position="P1_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_P2]]"></one-hex>
-        <one-hex class="P1_P1" position="P1_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_P1]]"></one-hex>
-        <one-hex class="P1_N0" position="P1_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N0]]"></one-hex>
-        <one-hex class="P1_N1" position="P1_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N1]]"></one-hex>
-        <one-hex class="P1_N2" position="P1_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N2]]"></one-hex>
-        <one-hex class="P1_N3" position="P1_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N3]]"></one-hex>
-        <one-hex class="P1_N4" position="P1_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[P1_N4]]"></one-hex>
-
+        <one-hex class="p4_p1" position="p4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_p1]]"></one-hex>
+        <one-hex class="p3_p1" position="p3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p1]]"></one-hex>
+        <one-hex class="p2_p1" position="p2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p1]]"></one-hex>
+        <one-hex class="p1_p1" position="p1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p1]]"></one-hex>
+        <one-hex class="n0_p1" position="n0_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p1]]"></one-hex>
+        <one-hex class="n1_p1" position="n1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p1]]"></one-hex>
+        <one-hex class="n2_p1" position="n2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p1]]"></one-hex>
+        <one-hex class="n3_p1" position="n3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p1]]"></one-hex>
+        <one-hex class="n4_p1" position="n4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p1]]"></one-hex>
+        <one-hex class="n5_p1" position="n5_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p1]]"></one-hex>
 
         <one-hex class="BV_01" position="BV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_01]]"></one-hex>
         <one-hex class="BV_02" position="BV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_02]]"></one-hex>
@@ -142,64 +141,63 @@ class MyView1 extends PolymerElement {
         <one-hex class="BV_11" position="BV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_11]]"></one-hex>
         <one-hex class="BV_12" position="BV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_12]]"></one-hex>
         <one-hex class="BV_13" position="BV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_13]]"></one-hex>
-   
 
-        <one-hex class="N0_P5" position="N0_P5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P5]]"></one-hex>
-        <one-hex class="N0_P4" position="N0_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P4]]"></one-hex>
-        <one-hex class="N0_P3" position="N0_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P3]]"></one-hex>
-        <one-hex class="N0_P2" position="N0_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P2]]"></one-hex>
-        <one-hex class="N0_P1" position="N0_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_P1]]"></one-hex>
-        <one-hex class="N0_N0" position="N0_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N0]]"></one-hex>
-        <one-hex class="N0_N1" position="N0_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N1]]"></one-hex>
-        <one-hex class="N0_N2" position="N0_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N2]]"></one-hex>
-        <one-hex class="N0_N3" position="N0_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N3]]"></one-hex>
-        <one-hex class="N0_N4" position="N0_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N4]]"></one-hex>
-        <one-hex class="N0_N5" position="N0_N5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N0_N5]]"></one-hex>
+        <one-hex class="p5_n0" position="p5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n0]]"></one-hex>
+        <one-hex class="p4_n0" position="p4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n0]]"></one-hex>
+        <one-hex class="p3_n0" position="p3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n0]]"></one-hex>
+        <one-hex class="p2_n0" position="p2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n0]]"></one-hex>
+        <one-hex class="p1_n0" position="p1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n0]]"></one-hex>
+        <one-hex class="n0_n0" position="n0_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n0]]"></one-hex>
+        <one-hex class="n1_n0" position="n1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n0]]"></one-hex>
+        <one-hex class="n2_n0" position="n2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n0]]"></one-hex>
+        <one-hex class="n3_n0" position="n3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n0]]"></one-hex>
+        <one-hex class="n4_n0" position="n4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n0]]"></one-hex>
+        <one-hex class="n5_n0" position="n5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_n0]]"></one-hex>
 
-        <one-hex class="N1_P5" position="N1_P5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_P5]]"></one-hex>
-        <one-hex class="N1_P4" position="N1_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_P4]]"></one-hex>
-        <one-hex class="N1_P3" position="N1_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_P3]]"></one-hex>
-        <one-hex class="N1_P2" position="N1_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_P2]]"></one-hex>
-        <one-hex class="N1_P1" position="N1_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_P1]]"></one-hex>
-        <one-hex class="N1_N0" position="N1_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_N0]]"></one-hex>
-        <one-hex class="N1_N1" position="N1_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_N1]]"></one-hex>
-        <one-hex class="N1_N2" position="N1_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_N2]]"></one-hex>
-        <one-hex class="N1_N3" position="N1_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_N3]]"></one-hex>
-        <one-hex class="N1_N4" position="N1_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N1_N4]]"></one-hex>
+        <one-hex class="p5_n1" position="p5_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n1]]"></one-hex>
+        <one-hex class="p4_n1" position="p4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n1]]"></one-hex>
+        <one-hex class="p3_n1" position="p3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n1]]"></one-hex>
+        <one-hex class="p2_n1" position="p2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n1]]"></one-hex>
+        <one-hex class="p1_n1" position="p1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n1]]"></one-hex>
+        <one-hex class="n0_n1" position="n0_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n1]]"></one-hex>
+        <one-hex class="n1_n1" position="n1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n1]]"></one-hex>
+        <one-hex class="n2_n1" position="n2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n1]]"></one-hex>
+        <one-hex class="n3_n1" position="n3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n1]]"></one-hex>
+        <one-hex class="n4_n1" position="n4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n1]]"></one-hex>
 
-        <one-hex class="N2_P4" position="N2_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_P4]]"></one-hex>
-        <one-hex class="N2_P3" position="N2_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_P3]]"></one-hex>
-        <one-hex class="N2_P2" position="N2_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_P2]]"></one-hex>
-        <one-hex class="N2_P1" position="N2_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_P1]]"></one-hex>
-        <one-hex class="N2_N0" position="N2_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_N0]]"></one-hex>
-        <one-hex class="N2_N1" position="N2_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_N1]]"></one-hex>
-        <one-hex class="N2_N2" position="N2_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_N2]]"></one-hex>
-        <one-hex class="N2_N3" position="N2_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_N3]]"></one-hex>
-        <one-hex class="N2_N4" position="N2_N4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N2_N4]]"></one-hex>
+        <one-hex class="p5_n2" position="p5_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n2]]"></one-hex>
+        <one-hex class="p4_n2" position="p4_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n2]]"></one-hex>
+        <one-hex class="p3_n2" position="p3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n2]]"></one-hex>
+        <one-hex class="p2_n2" position="p2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n2]]"></one-hex>
+        <one-hex class="p1_n2" position="p1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n2]]"></one-hex>
+        <one-hex class="n0_n2" position="n0_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n2]]"></one-hex>
+        <one-hex class="n1_n2" position="n1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n2]]"></one-hex>
+        <one-hex class="n2_n2" position="n2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n2]]"></one-hex>
+        <one-hex class="n3_n2" position="n3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n2]]"></one-hex>
 
-        <one-hex class="N3_P4" position="N3_P4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_P4]]"></one-hex>
-        <one-hex class="N3_P3" position="N3_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_P3]]"></one-hex>
-        <one-hex class="N3_P2" position="N3_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_P2]]"></one-hex>
-        <one-hex class="N3_P1" position="N3_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_P1]]"></one-hex>
-        <one-hex class="N3_N0" position="N3_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_N0]]"></one-hex>
-        <one-hex class="N3_N1" position="N3_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_N1]]"></one-hex>
-        <one-hex class="N3_N2" position="N3_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_N2]]"></one-hex>
-        <one-hex class="N3_N3" position="N3_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N3_N3]]"></one-hex>
+        <one-hex class="p5_n3" position="p5_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n3]]"></one-hex>
+        <one-hex class="p4_n3" position="p4_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n3]]"></one-hex>
+        <one-hex class="p3_n3" position="p3_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n3]]"></one-hex>
+        <one-hex class="p2_n3" position="p2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n3]]"></one-hex>
+        <one-hex class="p1_n3" position="p1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n3]]"></one-hex>
+        <one-hex class="n0_n3" position="n0_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n3]]"></one-hex>
+        <one-hex class="n1_n3" position="n1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n3]]"></one-hex>
+        <one-hex class="n2_n3" position="n2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n3]]"></one-hex>
 
-        <one-hex class="N4_P3" position="N4_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_P3]]"></one-hex>
-        <one-hex class="N4_P2" position="N4_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_P2]]"></one-hex>
-        <one-hex class="N4_P1" position="N4_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_P1]]"></one-hex>
-        <one-hex class="N4_N0" position="N4_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_N0]]"></one-hex>
-        <one-hex class="N4_N1" position="N4_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_N1]]"></one-hex>
-        <one-hex class="N4_N2" position="N4_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_N2]]"></one-hex>
-        <one-hex class="N4_N3" position="N4_N3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N4_N3]]"></one-hex>
+        <one-hex class="p5_n4" position="p5_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n4]]"></one-hex>
+        <one-hex class="p4_n4" position="p4_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n4]]"></one-hex>
+        <one-hex class="p3_n4" position="p3_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n4]]"></one-hex>
+        <one-hex class="p2_n4" position="p2_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n4]]"></one-hex>
+        <one-hex class="p1_n4" position="p1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n4]]"></one-hex>
+        <one-hex class="n0_n4" position="n0_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n4]]"></one-hex>
+        <one-hex class="n1_n4" position="n1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n4]]"></one-hex>
 
-        <one-hex class="N5_P3" position="N5_P3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_P3]]"></one-hex>
-        <one-hex class="N5_P2" position="N5_P2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_P2]]"></one-hex>
-        <one-hex class="N5_P1" position="N5_P1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_P1]]"></one-hex>
-        <one-hex class="N5_N0" position="N5_N0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N0]]"></one-hex>
-        <one-hex class="N5_N1" position="N5_N1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N1]]"></one-hex>
-        <one-hex class="N5_N2" position="N5_N2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[N5_N2]]"></one-hex>
+        <one-hex class="p5_n5" position="p5_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n5]]"></one-hex>
+        <one-hex class="p4_n5" position="p4_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n5]]"></one-hex>
+        <one-hex class="p3_n5" position="p3_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n5]]"></one-hex>
+        <one-hex class="p2_n5" position="p2_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n5]]"></one-hex>
+        <one-hex class="p1_n5" position="p1_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n5]]"></one-hex>
+        <one-hex class="n0_n5" position="n0_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n5]]"></one-hex>
 
         <one-hex class="TV_01" position="TV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_01]]"></one-hex>
         <one-hex class="TV_02" position="TV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_02]]"></one-hex>
@@ -363,97 +361,97 @@ class MyView1 extends PolymerElement {
   }
   _start(){
      const start = [
-        {loc:'P5_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P5_P2', tok: 'WC', hue: '255,0,0,0.3'}, 
-        {loc:'P5_P1', tok: 'WQ', hue: '255,0,0,0.3'}, 
-        {loc:'P5_N0', tok: 'WK', hue: '255,0,0,0.3'}, 
-        {loc:'P5_N1', tok: 'WC', hue: '255,0,0,0.3'}, 
-        {loc:'P5_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P4_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P4_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P4_P1', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'P4_N0', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'P4_N1', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'P4_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P4_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_P1', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'P3_N0', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'P3_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P3_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_N0', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'P2_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P2_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_P5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'P1_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_P5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N0_N5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N1_P5', tok: 'BC', hue: '255,0,0,0.3'}, 
-        {loc:'N1_P4', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'N1_P3', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'N1_P2', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'N1_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N1_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N1_N1', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'N1_N2', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'N1_N3', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'N1_N4', tok: 'TC', hue: '255,0,0,0.3'}, 
-        {loc:'N2_P4', tok: 'BK', hue: '255,0,0,0.3'}, 
-        {loc:'N2_P3', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'N2_P2', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'N2_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N2_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N2_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N2_N2', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'N2_N3', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'N2_N4', tok: 'TK', hue: '255,0,0,0.3'}, 
-        {loc:'N3_P4', tok: 'BQ', hue: '255,0,0,0.3'}, 
-        {loc:'N3_P3', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'N3_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N3_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N3_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N3_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N3_N2', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'N3_N3', tok: 'TQ', hue: '255,0,0,0.3'}, 
-        {loc:'N4_P3', tok: 'BC', hue: '255,0,0,0.3'}, 
-        {loc:'N4_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N4_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N4_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N4_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N4_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N4_N3', tok: 'TC', hue: '255,0,0,0.3'}, 
-        {loc:'N5_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N5_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N5_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N5_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N5_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'N5_N2', tok: 'XX', hue: '255,0,0,0.3'},
+        {loc:'n0_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_p5', tok: 'WC', hue: '255,0,0,0.3'}, 
+        {loc:'n2_p5', tok: 'WQ', hue: '255,0,0,0.3'}, 
+        {loc:'n3_p5', tok: 'WK', hue: '255,0,0,0.3'}, 
+        {loc:'n4_p5', tok: 'WC', hue: '255,0,0,0.3'}, 
+        {loc:'n5_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
+        {loc:'n2_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
+        {loc:'n3_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
+        {loc:'n4_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n5_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_p3', tok: 'WP', hue: '255,0,0,0.3'}, 
+        {loc:'n2_p3', tok: 'WP', hue: '255,0,0,0.3'}, 
+        {loc:'n3_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n4_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n5_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_p2', tok: 'WP', hue: '255,0,0,0.3'}, 
+        {loc:'n2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n4_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n5_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n5_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n1', tok: 'BC', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n1', tok: 'BE', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n1', tok: 'BP', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n1', tok: 'BP', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_n1', tok: 'TP', hue: '255,0,0,0.3'}, 
+        {loc:'n2_n1', tok: 'TP', hue: '255,0,0,0.3'}, 
+        {loc:'n3_n1', tok: 'TE', hue: '255,0,0,0.3'}, 
+        {loc:'n4_n1', tok: 'TC', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n2', tok: 'BK', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n2', tok: 'BE', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n2', tok: 'BP', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_n2', tok: 'TP', hue: '255,0,0,0.3'}, 
+        {loc:'n2_n2', tok: 'TE', hue: '255,0,0,0.3'}, 
+        {loc:'n3_n2', tok: 'TK', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n3', tok: 'BQ', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n3', tok: 'BE', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_n3', tok: 'TE', hue: '255,0,0,0.3'}, 
+        {loc:'n2_n3', tok: 'TQ', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n4', tok: 'BC', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n1_n4', tok: 'TC', hue: '255,0,0,0.3'}, 
+        {loc:'p5_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p4_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p3_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p2_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'p1_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+        {loc:'n0_n5', tok: 'XX', hue: '255,0,0,0.3'},
         {loc:'WV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
         {loc:'WV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
         {loc:'WV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
@@ -499,97 +497,97 @@ class MyView1 extends PolymerElement {
 
   _clear(){
     const clear = [
-      {loc:'P5_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P5_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P5_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P5_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P5_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P5_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P4_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P3_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P2_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_P5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'P1_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_P5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N0_N5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_P5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N1_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N2_N4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_P4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N3_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_N2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N4_N3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_P3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_P2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_P1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_N0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_N1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'N5_N2', tok: 'XX', hue: '255,0,0,0.3'},
+      {loc:'n0_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n4_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n3_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p5_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p4_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p3_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p2_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'p1_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
+      {loc:'n0_n5', tok: 'XX', hue: '255,0,0,0.3'},
       {loc:'WV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
       {loc:'WV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
       {loc:'WV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
