@@ -10,16 +10,20 @@ class MyView1 extends PolymerElement {
         :host {
           display: block;
           padding: 10px;
-          transform: scale(0.9)
+          transform: scale(0.65);
+          position: relative;
+          left: -125px;
+          top: -214px;
         }
         .board {
           position: relative;
           width: 1131px;
           height: 1131px;
-          top: -100px;
+          top: -70px;
           transform-origin: center;
           transform: var(--rotate-board);
           pointer-events:none;  
+          left: -30px;
         }
         one-hex {
           width: 150px;
@@ -51,20 +55,33 @@ class MyView1 extends PolymerElement {
           z-index: 9999;
 
         }
-
+        p {
+          color: white;
+        }
+        button {
+          margin-right: 12px;
+        }
+        .flex{
+          display: flex;
+        }
       </style>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
 
       <div class="top-area">
+      <img src="./images/logo.png">
         <template is="dom-if" if="{{settings}}">
           <p>You are [[color]] in game [[gameId]], now waiting for white to move.</p>
         </template>
         <template is="dom-if" if="{{!settings}}">
           <a href="/view3">Complete the settings to start</a>
         </template>
-        <template is="dom-if" if="{{moveready}}">
-          <button on-click="_postMove">Make Move</button>
-        </template>
+
+        
+        <div class="flex">
+          <button on-click="_oops">Ooops...</button>
+          <button on-click="_imdone">That's mah move</button>
+          <button on-click="_settings">Settings</button>
+        </div>
       </div>
 
       <div class="board">
@@ -270,7 +287,49 @@ class MyView1 extends PolymerElement {
               console.log(`GET Board Endpoint error ${error}`);
             }
           })
-     }, 10000);
+     }, 1000);
+   }
+
+   _oops(){
+    const gameId = localStorage.getItem('gameId');
+    const color = localStorage.getItem('color');
+    const url = `https://ladybug.international/Move/TurnReset`;
+    const data = {gameId, color};
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {'Content-Type': 'application/json'},
+    })
+        .then((response) => {
+          return response.json();
+        })
+        .then((response) => {
+          console.log(`Server replied with ${JSON.stringify(response)}`)
+        })
+        .catch((error)=>{
+          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+        })
+   }
+
+   _imdone(){
+    const gameId = localStorage.getItem('gameId');
+    const color = localStorage.getItem('color');
+    const url = `https://ladybug.international/Move/TurnConcluded`;
+    const data = {gameId, color};
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {'Content-Type': 'application/json'},
+    })
+        .then((response) => {
+          return response.json();
+        })
+        .then((response) => {
+          console.log(`Server replied with ${JSON.stringify(response)}`)
+        })
+        .catch((error)=>{
+          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+        })
    }
 
    _postMove(){
@@ -309,6 +368,10 @@ class MyView1 extends PolymerElement {
     }
   }
 
+  _settings() {
+    this.set('route.path', '/view3');
+  }
+
   _selected(){
     this._getPossibleMoves();
     if(this.selected.charAt(6).toLowerCase() === this.color.charAt(0)){
@@ -321,6 +384,7 @@ class MyView1 extends PolymerElement {
     }
     if(this.move && this.light){
       this.moveready = true;
+      this._postMove();
     } else {
       this.moveready = false;
     }
@@ -357,281 +421,11 @@ class MyView1 extends PolymerElement {
       this.rotation = 'rotate(150deg)';
       this.updateStyles({'--rotate-board': 'rotate(-150deg)'});
     }
-    this._start();
   }
-  _start(){
-     const start = [
-        {loc:'n0_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_p5', tok: 'WC', hue: '255,0,0,0.3'}, 
-        {loc:'n2_p5', tok: 'WQ', hue: '255,0,0,0.3'}, 
-        {loc:'n3_p5', tok: 'WK', hue: '255,0,0,0.3'}, 
-        {loc:'n4_p5', tok: 'WC', hue: '255,0,0,0.3'}, 
-        {loc:'n5_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'n2_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'n3_p4', tok: 'WE', hue: '255,0,0,0.3'}, 
-        {loc:'n4_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n5_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_p3', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'n2_p3', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'n3_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n4_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n5_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_p2', tok: 'WP', hue: '255,0,0,0.3'}, 
-        {loc:'n2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n4_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n5_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n5_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n1', tok: 'BC', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n1', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n1', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n1', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_n1', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'n2_n1', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'n3_n1', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'n4_n1', tok: 'TC', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n2', tok: 'BK', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n2', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n2', tok: 'BP', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_n2', tok: 'TP', hue: '255,0,0,0.3'}, 
-        {loc:'n2_n2', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'n3_n2', tok: 'TK', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n3', tok: 'BQ', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n3', tok: 'BE', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_n3', tok: 'TE', hue: '255,0,0,0.3'}, 
-        {loc:'n2_n3', tok: 'TQ', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n4', tok: 'BC', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n1_n4', tok: 'TC', hue: '255,0,0,0.3'}, 
-        {loc:'p5_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p4_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p3_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p2_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'p1_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'n0_n5', tok: 'XX', hue: '255,0,0,0.3'},
-        {loc:'WV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'WV_13', tok: 'XX', hue: '255,0,0,0.3'},
-        {loc:'TV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'TV_13', tok: 'XX', hue: '255,0,0,0.3'},
-        {loc:'BV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-        {loc:'BV_13', tok: 'XX', hue: '255,0,0,0.3'}
-      ];
-     this._renderBoard(start);
-    }
 
-  _clear(){
-    const clear = [
-      {loc:'n0_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_p5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_p4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_p3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_p2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_p1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n5_n0', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n4_n1', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n3_n2', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n2_n3', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n1_n4', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p5_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p4_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p3_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p2_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'p1_n5', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'n0_n5', tok: 'XX', hue: '255,0,0,0.3'},
-      {loc:'WV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'WV_13', tok: 'XX', hue: '255,0,0,0.3'},
-      {loc:'TV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'TV_13', tok: 'XX', hue: '255,0,0,0.3'},
-      {loc:'BV_01', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_02', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_03', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_04', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_05', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_06', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_07', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_08', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_09', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_10', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_11', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_12', tok: 'XX', hue: '255,0,0,0.3'}, 
-      {loc:'BV_13', tok: 'XX', hue: '255,0,0,0.3'}
-    ];
-    this._renderBoard(clear);
-  }
 
   _renderBoard(arr){
+    console.log(arr);
     for (var i = 0; i < arr.length; i++) {
       this[arr[i].loc] = {tok: arr[i].tok, hue: arr[i].hue};
     }

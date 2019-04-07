@@ -45,26 +45,6 @@ class MyView3 extends PolymerElement {
         </select>
         <br>
         <button on-click="_save">Save</button>
-        <br><br><p>Please refresh after saving</p>
-        <br><br><p>All tok codes:</p>
-        <ul>
-          <li>WP = White Pawn</li>
-          <li>WE = White Elephant</li>
-          <li>WC = White Castle</li>
-          <li>WQ = White Queen</li>
-          <li>WK = White King</li>
-          <li>BP = Black Pawn</li>
-          <li>BE = Black Elephant</li>
-          <li>BC = Black Castle</li>
-          <li>BQ = Black Queen</li>
-          <li>BK = Black King</li>
-          <li>TP = Tan Pawn</li>
-          <li>TE = Tan Elephant</li>
-          <li>TC = Tan Castle</li>
-          <li>TQ = Tan Queen</li>
-          <li>TK = Tan King</li>
-          <li>XX = Blank Hex</li>
-        </ul>
       </div>
     `;
   }

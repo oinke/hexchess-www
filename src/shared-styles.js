@@ -108,7 +108,6 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       .n2_n1 {transform: translate(426px, 718px)}
       .n3_n1 {transform: translate(426px, 805px)}
       .n4_n1 {transform: translate(426px, 892px)}
-      .N1_N5 {transform: translate(426px, 979px)}
 
       .p5_n2 {transform: translate(353px, 152px)}
       .p4_n2 {transform: translate(353px, 239px)}
