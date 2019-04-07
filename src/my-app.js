@@ -114,11 +114,6 @@ class MyApp extends PolymerElement {
     } else {
       this.page = 'view404';
     }
-
-    // Close a non-persistent drawer when the page & route are changed.
-    if (!this.$.drawer.persistent) {
-      this.$.drawer.close();
-    }
   }
 
   _pageChanged(page) {

@@ -19,11 +19,11 @@ class MyView1 extends PolymerElement {
           position: relative;
           width: 1131px;
           height: 1131px;
-          top: -70px;
+          top: 0px;
           transform-origin: center;
           transform: var(--rotate-board);
           pointer-events:none;  
-          left: -30px;
+          left: -70px;
         }
         one-hex {
           width: 150px;
@@ -60,9 +60,11 @@ class MyView1 extends PolymerElement {
         }
         button {
           margin-right: 12px;
+          border: 1px solid #FF00DF;
         }
         .flex{
           display: flex;
+          margin-top: 15px;
         }
       </style>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
