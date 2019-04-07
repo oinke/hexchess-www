@@ -55,6 +55,11 @@ class MyApp extends PolymerElement {
           color: black;
           font-weight: bold;
         }
+        iron-pages {
+          background-image: url("./images/bg.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
 
 
 
@@ -70,34 +75,12 @@ class MyApp extends PolymerElement {
       <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}">
       </app-route>
 
-      <app-drawer-layout fullbleed="" narrow="{{narrow}}">
-        <!-- Drawer content -->
-        <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
-          <app-toolbar>Menu</app-toolbar>
-          <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-            <a name="view1" href="[[rootPath]]view1">Play</a>
-            <a name="view3" href="[[rootPath]]view3">Settings</a>
-          </iron-selector>
-        </app-drawer>
-
-        <!-- Main content -->
-        <app-header-layout has-scrolling-region="">
-
-          <app-header slot="header" condenses="" reveals="" effects="waterfall">
-            <app-toolbar>
-              <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="">Hex Chess</div>
-            </app-toolbar>
-          </app-header>
-
-          <iron-pages selected="[[page]]" attr-for-selected="name" role="main">
+      <iron-pages selected="[[page]]" attr-for-selected="name" role="main">
             <my-view1 name="view1"></my-view1>
             <my-view2 name="view2"></my-view2>
             <my-view3 name="view3"></my-view3>
             <my-view404 name="view404"></my-view404>
           </iron-pages>
-        </app-header-layout>
-      </app-drawer-layout>
     `;
   }
 

@@ -16,7 +16,8 @@ class OneHex extends PolymerElement {
         }
         polygon {
           fill: var(--fill-color);
-          stroke: black;
+          stroke: #ff0099;
+          stroke-width: 3;
           pointer-events:auto;
           z-index: 10;
           cursor: pointer;
@@ -274,7 +275,7 @@ class OneHex extends PolymerElement {
     this.updateStyles({'--rotate-token': this.rotation});
   }
   _position(){
-    if(this.position === 'N0_N0'){
+    if(this.position === 'n0_n0'){
       this.updateStyles({'--fill-color': '#F7A24B'});
     } else {
       this.updateStyles({'--fill-color': '#C3C3C3'});
