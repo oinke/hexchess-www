@@ -81,7 +81,7 @@ class MyView1 extends PolymerElement {
         
         <div class="flex">
           <button on-click="_oops">Ooops...</button>
-          <button on-click="_imdone">That's mah move</button>
+          <button on-click="_thatMahmoove">That's mah move</button>
           <button on-click="_settings">Settings</button>
         </div>
       </div>
@@ -295,11 +295,9 @@ class MyView1 extends PolymerElement {
    _oops(){
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
-    const url = `https://ladybug.international/Move/TurnReset`;
-    const data = {gameId, color};
+    const url = `https://ladybug.international/Move/TurnReset?gameId=${gameId}&color=${color}`;
     fetch(url, {
       method: 'POST',
-      body: JSON.stringify(data),
       headers: {'Content-Type': 'application/json'},
     })
         .then((response) => {
@@ -313,14 +311,12 @@ class MyView1 extends PolymerElement {
         })
    }
 
-   _imdone(){
+   _thatMahmoove(){
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
-    const url = `https://ladybug.international/Move/TurnConcluded`;
-    const data = {gameId, color};
+    const url = `https://ladybug.international/Move/TurnConcluded?gameId=${gameId}&color=${color}`;
     fetch(url, {
       method: 'POST',
-      body: JSON.stringify(data),
       headers: {'Content-Type': 'application/json'},
     })
         .then((response) => {
