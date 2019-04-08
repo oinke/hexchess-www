@@ -269,7 +269,7 @@ class MyView1 extends PolymerElement {
     super.ready();
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
-    const url = `https://ladybug.international/Move/Board?gameid=${gameId}&color=${color}`;
+    const url = `https://ladybug.international/Move/Board?gameId=${gameId}&color=${color}`;
     setInterval(() => { 
       fetch(url, {
         method: 'GET',
