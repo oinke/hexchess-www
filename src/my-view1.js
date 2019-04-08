@@ -89,7 +89,7 @@ class MyView1 extends PolymerElement {
 
         <div class="flex">
           <button on-click="_oops">Ooops...</button>
-          <button on-click="_thatMahmoove">That's mah move</button>
+          <button on-click="_thatMahmoove" style="width: 400px;">That's mamove</button>
           <button on-click="_settings">Settings</button>
         </div>
       </div>
@@ -243,7 +243,7 @@ class MyView1 extends PolymerElement {
           <canvas id="particles"></canvas>
         </div>
       </div>
-
+<a href="https://www.dennys.com/food/kids/" target="_blank"><img src="./images/advert.png" style="position: relative; top: 80px;"></a>
     `;
   }
   static get properties() {
@@ -325,7 +325,7 @@ class MyView1 extends PolymerElement {
         this.radius = Math.random() ;
         this.opacity =  (Math.random()*5 + 2)/10;
         this.distance = (1/this.opacity)*distance;
-        this.speed = this.distance*0.00003;
+        this.speed = this.distance*0.001112;
 
         this.position = {
           x: x + this.distance * Math.cos(this.angle),
