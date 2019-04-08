@@ -22,7 +22,7 @@ class MyView1 extends PolymerElement {
           top: 0px;
           transform-origin: center;
           transform: var(--rotate-board);
-          pointer-events:none;  
+          pointer-events:none;
           left: -70px;
         }
         one-hex {
@@ -66,6 +66,14 @@ class MyView1 extends PolymerElement {
           display: flex;
           margin-top: 15px;
         }
+        .particles{
+          height: 700px;
+          width: 700px;
+          transform: translate(225px, 225px);
+          position: absolute;
+          z-index: 9999;
+          border-radius: 50%;
+        }
       </style>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
 
@@ -78,7 +86,7 @@ class MyView1 extends PolymerElement {
           <a href="/view3">Complete the settings to start</a>
         </template>
 
-        
+
         <div class="flex">
           <button on-click="_oops">Ooops...</button>
           <button on-click="_thatMahmoove">That's mah move</button>
@@ -231,8 +239,11 @@ class MyView1 extends PolymerElement {
         <one-hex class="TV_11" position="TV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_11]]"></one-hex>
         <one-hex class="TV_12" position="TV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_12]]"></one-hex>
         <one-hex class="TV_13" position="TV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_13]]"></one-hex>
+        <div class="particles">
+          <canvas id="particles"></canvas>
+        </div>
       </div>
-      
+
     `;
   }
   static get properties() {
@@ -270,7 +281,7 @@ class MyView1 extends PolymerElement {
     const gameId = localStorage.getItem('gameId');
     const color = localStorage.getItem('color');
     const url = `https://ladybug.international/Move/Board?gameId=${gameId}&color=${color}`;
-    setInterval(() => { 
+    setInterval(() => {
       fetch(url, {
         method: 'GET',
         headers: {'Content-Type': 'application/json'},
@@ -290,7 +301,91 @@ class MyView1 extends PolymerElement {
             }
           })
      }, 1000);
+     // Global Animation Setting
+      window.requestAnimFrame =
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function(callback) {
+          window.setTimeout(callback, 1000/60);
+      };
+
+      // Global Canvas Setting
+      var canvas = this.$.particles
+      var ctx = canvas.getContext('2d');
+      canvas.width = 700;
+      canvas.height = 700;
+
+
+      // Particles Around the Parent
+      function Particle(x, y, distance) {
+        this.angle = Math.random() * 2 * Math.PI;
+        this.radius = Math.random() ;
+        this.opacity =  (Math.random()*5 + 2)/10;
+        this.distance = (1/this.opacity)*distance;
+        this.speed = this.distance*0.00003;
+
+        this.position = {
+          x: x + this.distance * Math.cos(this.angle),
+          y: y + this.distance * Math.sin(this.angle)
+        };
+
+        this.draw = function() {
+          ctx.fillStyle = "rgba(0,0,0," + this.opacity + ")";
+          ctx.beginPath();
+          ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI*2, false);
+          ctx.fill();
+          ctx.closePath();
+        }
+        this.update = function() {
+          this.angle += this.speed;
+          this.position = {
+            x: x + this.distance * Math.cos(this.angle),
+            y: y + this.distance * Math.sin(this.angle)
+          };
+          this.draw();
+        }
+      }
+
+      function Emitter(x, y) {
+        this.position = { x: x, y: y};
+        this.radius = 30;
+        this.count = 3000;
+        this.particles = [];
+
+        for(var i=0; i< this.count; i ++ ){
+          this.particles.push(new Particle(this.position.x, this.position.y, this.radius));
+        }
+      }
+
+
+      Emitter.prototype = {
+        draw: function() {
+          // /ctx.fillStyle = "rgba(0,0,0,1)";
+          ctx.beginPath();
+          ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI*2, false);
+          //ctx.fill();
+          ctx.closePath();
+        },
+        update: function() {
+         for(var i=0; i< this.count; i++) {
+           this.particles[i].update();
+         }
+          this.draw();
+        }
+      }
+      var emitter = new Emitter(canvas.width/2, canvas.height/2);
+
+      function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        emitter.update();
+        requestAnimFrame(loop);
+      }
+      loop();
    }
+  
 
    _oops(){
     const gameId = localStorage.getItem('gameId');
