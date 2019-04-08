@@ -290,14 +290,14 @@ class MyView1 extends PolymerElement {
             return response.json();
           })
           .then((response) => {
-            console.log(`Server replied with ${response}`)
+            //console.log(`Server replied with ${response}`)
             if(response){
               this._renderBoard(response);
             }
           })
           .catch((error) => {
             if (error) {
-              console.log(`GET Board Endpoint error ${error}`);
+              //console.log(`GET Board Endpoint error ${error}`);
             }
           })
      }, 1000);
@@ -385,7 +385,7 @@ class MyView1 extends PolymerElement {
       }
       loop();
    }
-  
+
 
    _oops(){
     const gameId = localStorage.getItem('gameId');
@@ -399,10 +399,10 @@ class MyView1 extends PolymerElement {
           return response.json();
         })
         .then((response) => {
-          console.log(`Server replied with ${JSON.stringify(response)}`)
+          //console.log(`Server replied with ${JSON.stringify(response)}`)
         })
         .catch((error)=>{
-          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+          //console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
         })
    }
 
@@ -418,10 +418,10 @@ class MyView1 extends PolymerElement {
           return response.json();
         })
         .then((response) => {
-          console.log(`Server replied with ${JSON.stringify(response)}`)
+          //console.log(`Server replied with ${JSON.stringify(response)}`)
         })
         .catch((error)=>{
-          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+          //console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
         })
    }
 
@@ -441,10 +441,10 @@ class MyView1 extends PolymerElement {
           return response.json();
         })
         .then((response) => {
-          console.log(`Server replied with ${JSON.stringify(response)}`)
+          //console.log(`Server replied with ${JSON.stringify(response)}`)
         })
         .catch((error)=>{
-          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+          //console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
         })
    }
 
@@ -500,7 +500,7 @@ class MyView1 extends PolymerElement {
           }
         })
         .catch((error)=>{
-          console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+          //console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
         })
   }
   _rotate(color){
@@ -518,7 +518,7 @@ class MyView1 extends PolymerElement {
 
 
   _renderBoard(arr){
-    console.log(arr);
+    //console.log(arr);
     for (var i = 0; i < arr.length; i++) {
       this[arr[i].loc] = {tok: arr[i].tok, hue: arr[i].hue};
     }

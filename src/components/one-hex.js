@@ -8,11 +8,11 @@ class OneHex extends PolymerElement {
         :host {
           width: var(--max-size);
           height: var(--max-size);
-          pointer-events:none;    
+          pointer-events:none;
         }
         svg {
           max-width: var(--max-size);
-          pointer-events:none;    
+          pointer-events:none;
         }
         polygon {
           fill: var(--fill-color);
@@ -32,7 +32,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: var(--rotate-token);
           display: var(--elephant-display, none);
-          pointer-events:none; 
+          pointer-events:none;
         }
         .Pawn{
           position: absolute;
@@ -41,7 +41,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: var(--rotate-token);
           display: var(--pawn-display, none);
-          pointer-events:none; 
+          pointer-events:none;
         }
         .Castle{
           position: absolute;
@@ -50,7 +50,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: var(--rotate-token);
           display: var(--castle-display, none);
-          pointer-events:none; 
+          pointer-events:none;
         }
         .Queen{
           position: absolute;
@@ -59,7 +59,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: var(--rotate-token);
           display: var(--queen-display, none);
-          pointer-events:none; 
+          pointer-events:none;
         }
         .King{
           position: absolute;
@@ -68,7 +68,7 @@ class OneHex extends PolymerElement {
           z-index: 50;
           transform: var(--rotate-token);
           display: var(--king-display, none);
-          pointer-events:none; 
+          pointer-events:none;
         }
       </style>
 
@@ -204,6 +204,7 @@ class OneHex extends PolymerElement {
 </svg>
       <svg viewBox="[[halfSize]]" transform$="[[rotateVal]]"><polygon points$="{{hex}}" on-click="_click"/></svg>
       </div>
+      <audio id="portal" loop src="/audio/portal.mp3"> </audio>
     `;
   }
   static get properties() {
@@ -276,7 +277,7 @@ class OneHex extends PolymerElement {
   }
   _position(){
     if(this.position === 'n0_n0'){
-      this.updateStyles({'--fill-color': '#F7A24B'});
+      //this.updateStyles({'--fill-color': '#F7A24B'});
     } else {
       this.updateStyles({'--fill-color': '#C3C3C3'});
     }
@@ -303,6 +304,7 @@ class OneHex extends PolymerElement {
   }
   _state(){
     this.updateStyles({'--fill-color': `rgba(${this.state.hue})`});
+    //console.log(this.position == 'n0_n0' && this.state.tok != 'XX')
     if(this.state.tok === 'XX'){
       this.updateStyles({'--elephant-display': 'none'});
       this.updateStyles({'--pawn-display': 'none'});
@@ -432,8 +434,11 @@ class OneHex extends PolymerElement {
       this.tokenColor = '#924A2E';
       this.iconColor = '#FFFFFF';
     }
+    if (this.position == 'n0_n0' && this.state.tok != 'XX') {
+      this.$.portal.play();
+    }
+    if (this.position == 'n0_n0' && this.state.tok === 'XX') {
+      this.$.portal.pause();
+    }
   }
 } window.customElements.define('one-hex', OneHex);
-
-
-
