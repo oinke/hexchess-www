@@ -16,7 +16,7 @@ class OneHex extends PolymerElement {
         }
         polygon {
           fill: var(--fill-color);
-          stroke: #ff0099;
+          stroke: #edea64;
           stroke-width: 3;
           pointer-events:auto;
           z-index: 10;

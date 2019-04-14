@@ -41,7 +41,7 @@ class MyView1 extends PolymerElement {
           color: #C3C3C3;
         }
         a {
-          color: cornflowerblue;
+          color: #edea64;
         }
         .top-area{
           height: 120px;
@@ -74,11 +74,19 @@ class MyView1 extends PolymerElement {
           z-index: 9999;
           border-radius: 50%;
         }
+        .link{
+          font-weight: 700;
+          font-size: 24;
+          position: absolute;
+          padding-top: 45px;
+          padding-left: 80px;
+        }
       </style>
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]"></app-location>
 
       <div class="top-area">
       <img src="./images/logo.png">
+      <a href="https://github.com/mcfnord/hc22" class="link">Learn more</a>
         <template is="dom-if" if="{{settings}}">
           <p>You are [[color]] in game [[gameId]], now waiting for white to move.</p>
         </template>
@@ -89,11 +97,11 @@ class MyView1 extends PolymerElement {
 
         <div class="flex">
           <button on-click="_oops">Ooops...</button>
-          <button on-click="_thatMahmoove" style="width: 400px;">That's mamove</button>
+          <button on-click="_thatMahmoove" style="width: 450px;">That's mamove</button>
           <button on-click="_settings">Settings</button>
         </div>
       </div>
-
+      <br><br><br><br><br>
       <div class="board">
 
         <one-hex class="WV_01" position="WV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_01]]"></one-hex>
