@@ -104,149 +104,149 @@ class MyView1 extends PolymerElement {
       <br><br><br><br><br>
       <div class="board">
 
-        <one-hex class="WV_01" position="WV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_01]]"></one-hex>
-        <one-hex class="WV_02" position="WV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_02]]"></one-hex>
-        <one-hex class="WV_03" position="WV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_03]]"></one-hex>
-        <one-hex class="WV_04" position="WV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_04]]"></one-hex>
-        <one-hex class="WV_05" position="WV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_05]]"></one-hex>
-        <one-hex class="WV_06" position="WV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_06]]"></one-hex>
-        <one-hex class="WV_07" position="WV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_07]]"></one-hex>
-        <one-hex class="WV_08" position="WV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_08]]"></one-hex>
-        <one-hex class="WV_09" position="WV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_09]]"></one-hex>
-        <one-hex class="WV_10" position="WV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_10]]"></one-hex>
-        <one-hex class="WV_11" position="WV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_11]]"></one-hex>
-        <one-hex class="WV_12" position="WV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_12]]"></one-hex>
-        <one-hex class="WV_13" position="WV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_13]]"></one-hex>
+        <one-hex id="WV_01" class="WV_01" position="WV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_01]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_02" class="WV_02" position="WV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_02]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_03" class="WV_03" position="WV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_03]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_04" class="WV_04" position="WV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_04]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_05" class="WV_05" position="WV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_05]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_06" class="WV_06" position="WV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_06]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_07" class="WV_07" position="WV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_07]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_08" class="WV_08" position="WV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_08]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_09" class="WV_09" position="WV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_09]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_10" class="WV_10" position="WV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_10]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_11" class="WV_11" position="WV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_11]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_12" class="WV_12" position="WV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_12]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="WV_13" class="WV_13" position="WV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[WV_13]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="n0_p5" position="n0_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p5]]"></one-hex>
-        <one-hex class="n1_p5" position="n1_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p5]]"></one-hex>
-        <one-hex class="n2_p5" position="n2_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p5]]"></one-hex>
-        <one-hex class="n3_p5" position="n3_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p5]]"></one-hex>
-        <one-hex class="n4_p5" position="n4_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p5]]"></one-hex>
-        <one-hex class="n5_p5" position="n5_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p5]]"></one-hex>
+        <one-hex id="n0_p5" class="n0_p5" position="n0_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_p5" class="n1_p5" position="n1_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_p5" class="n2_p5" position="n2_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_p5" class="n3_p5" position="n3_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_p5" class="n4_p5" position="n4_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_p5" class="n5_p5" position="n5_p5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p1_p4" position="p1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p4]]"></one-hex>
-        <one-hex class="n0_p4" position="n0_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p4]]"></one-hex>
-        <one-hex class="n1_p4" position="n1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p4]]"></one-hex>
-        <one-hex class="n2_p4" position="n2_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p4]]"></one-hex>
-        <one-hex class="n3_p4" position="n3_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p4]]"></one-hex>
-        <one-hex class="n4_p4" position="n4_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p4]]"></one-hex>
-        <one-hex class="n5_p4" position="n5_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p4]]"></one-hex>
+        <one-hex id="p1_p4" class="p1_p4" position="p1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_p4" class="n0_p4" position="n0_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_p4" class="n1_p4" position="n1_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_p4" class="n2_p4" position="n2_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_p4" class="n3_p4" position="n3_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_p4" class="n4_p4" position="n4_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_p4" class="n5_p4" position="n5_p4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p2_p3" position="p2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p3]]"></one-hex>
-        <one-hex class="p1_p3" position="p1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p3]]"></one-hex>
-        <one-hex class="n0_p3" position="n0_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p3]]"></one-hex>
-        <one-hex class="n1_p3" position="n1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p3]]"></one-hex>
-        <one-hex class="n2_p3" position="n2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p3]]"></one-hex>
-        <one-hex class="n3_p3" position="n3_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p3]]"></one-hex>
-        <one-hex class="n4_p3" position="n4_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p3]]"></one-hex>
-        <one-hex class="n5_p3" position="n5_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p3]]"></one-hex>
+        <one-hex id="p2_p3" class="p2_p3" position="p2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_p3" class="p1_p3" position="p1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_p3" class="n0_p3" position="n0_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_p3" class="n1_p3" position="n1_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_p3" class="n2_p3" position="n2_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_p3" class="n3_p3" position="n3_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_p3" class="n4_p3" position="n4_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_p3" class="n5_p3" position="n5_p3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p3_p2" position="p3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p2]]"></one-hex>
-        <one-hex class="p2_p2" position="p2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p2]]"></one-hex>
-        <one-hex class="p1_p2" position="p1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p2]]"></one-hex>
-        <one-hex class="n0_p2" position="n0_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p2]]"></one-hex>
-        <one-hex class="n1_p2" position="n1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p2]]"></one-hex>
-        <one-hex class="n2_p2" position="n2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p2]]"></one-hex>
-        <one-hex class="n3_p2" position="n3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p2]]"></one-hex>
-        <one-hex class="n4_p2" position="n4_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p2]]"></one-hex>
-        <one-hex class="n5_p2" position="n5_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p2]]"></one-hex>
+        <one-hex id="p3_p2" class="p3_p2" position="p3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_p2" class="p2_p2" position="p2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_p2" class="p1_p2" position="p1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_p2" class="n0_p2" position="n0_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_p2" class="n1_p2" position="n1_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_p2" class="n2_p2" position="n2_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_p2" class="n3_p2" position="n3_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_p2" class="n4_p2" position="n4_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_p2" class="n5_p2" position="n5_p2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p4_p1" position="p4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_p1]]"></one-hex>
-        <one-hex class="p3_p1" position="p3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p1]]"></one-hex>
-        <one-hex class="p2_p1" position="p2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p1]]"></one-hex>
-        <one-hex class="p1_p1" position="p1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p1]]"></one-hex>
-        <one-hex class="n0_p1" position="n0_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p1]]"></one-hex>
-        <one-hex class="n1_p1" position="n1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p1]]"></one-hex>
-        <one-hex class="n2_p1" position="n2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p1]]"></one-hex>
-        <one-hex class="n3_p1" position="n3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p1]]"></one-hex>
-        <one-hex class="n4_p1" position="n4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p1]]"></one-hex>
-        <one-hex class="n5_p1" position="n5_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p1]]"></one-hex>
+        <one-hex id="p4_p1" class="p4_p1" position="p4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_p1" class="p3_p1" position="p3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_p1" class="p2_p1" position="p2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_p1" class="p1_p1" position="p1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_p1" class="n0_p1" position="n0_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_p1" class="n1_p1" position="n1_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_p1" class="n2_p1" position="n2_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_p1" class="n3_p1" position="n3_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_p1" class="n4_p1" position="n4_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_p1" class="n5_p1" position="n5_p1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_p1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="BV_01" position="BV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_01]]"></one-hex>
-        <one-hex class="BV_02" position="BV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_02]]"></one-hex>
-        <one-hex class="BV_03" position="BV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_03]]"></one-hex>
-        <one-hex class="BV_04" position="BV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_04]]"></one-hex>
-        <one-hex class="BV_05" position="BV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_05]]"></one-hex>
-        <one-hex class="BV_06" position="BV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_06]]"></one-hex>
-        <one-hex class="BV_07" position="BV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_07]]"></one-hex>
-        <one-hex class="BV_08" position="BV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_08]]"></one-hex>
-        <one-hex class="BV_09" position="BV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_09]]"></one-hex>
-        <one-hex class="BV_10" position="BV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_10]]"></one-hex>
-        <one-hex class="BV_11" position="BV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_11]]"></one-hex>
-        <one-hex class="BV_12" position="BV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_12]]"></one-hex>
-        <one-hex class="BV_13" position="BV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_13]]"></one-hex>
+        <one-hex id="BV_01" class="BV_01" position="BV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_01]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_02" class="BV_02" position="BV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_02]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_03" class="BV_03" position="BV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_03]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_04" class="BV_04" position="BV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_04]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_05" class="BV_05" position="BV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_05]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_06" class="BV_06" position="BV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_06]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_07" class="BV_07" position="BV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_07]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_08" class="BV_08" position="BV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_08]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_09" class="BV_09" position="BV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_09]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_10" class="BV_10" position="BV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_10]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_11" class="BV_11" position="BV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_11]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_12" class="BV_12" position="BV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_12]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="BV_13" class="BV_13" position="BV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[BV_13]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n0" position="p5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n0]]"></one-hex>
-        <one-hex class="p4_n0" position="p4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n0]]"></one-hex>
-        <one-hex class="p3_n0" position="p3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n0]]"></one-hex>
-        <one-hex class="p2_n0" position="p2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n0]]"></one-hex>
-        <one-hex class="p1_n0" position="p1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n0]]"></one-hex>
-        <one-hex class="n0_n0" position="n0_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n0]]"></one-hex>
-        <one-hex class="n1_n0" position="n1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n0]]"></one-hex>
-        <one-hex class="n2_n0" position="n2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n0]]"></one-hex>
-        <one-hex class="n3_n0" position="n3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n0]]"></one-hex>
-        <one-hex class="n4_n0" position="n4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n0]]"></one-hex>
-        <one-hex class="n5_n0" position="n5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_n0]]"></one-hex>
+        <one-hex id="p5_n0" class="p5_n0" position="p5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n0" class="p4_n0" position="p4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n0" class="p3_n0" position="p3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n0" class="p2_n0" position="p2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n0" class="p1_n0" position="p1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n0" class="n0_n0" position="n0_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_n0" class="n1_n0" position="n1_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_n0" class="n2_n0" position="n2_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_n0" class="n3_n0" position="n3_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_n0" class="n4_n0" position="n4_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n5_n0" class="n5_n0" position="n5_n0" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n5_n0]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n1" position="p5_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n1]]"></one-hex>
-        <one-hex class="p4_n1" position="p4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n1]]"></one-hex>
-        <one-hex class="p3_n1" position="p3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n1]]"></one-hex>
-        <one-hex class="p2_n1" position="p2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n1]]"></one-hex>
-        <one-hex class="p1_n1" position="p1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n1]]"></one-hex>
-        <one-hex class="n0_n1" position="n0_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n1]]"></one-hex>
-        <one-hex class="n1_n1" position="n1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n1]]"></one-hex>
-        <one-hex class="n2_n1" position="n2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n1]]"></one-hex>
-        <one-hex class="n3_n1" position="n3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n1]]"></one-hex>
-        <one-hex class="n4_n1" position="n4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n1]]"></one-hex>
+        <one-hex id="p5_n1" class="p5_n1" position="p5_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n1" class="p4_n1" position="p4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n1" class="p3_n1" position="p3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n1" class="p2_n1" position="p2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n1" class="p1_n1" position="p1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n1" class="n0_n1" position="n0_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_n1" class="n1_n1" position="n1_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_n1" class="n2_n1" position="n2_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_n1" class="n3_n1" position="n3_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n4_n1" class="n4_n1" position="n4_n1" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n4_n1]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n2" position="p5_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n2]]"></one-hex>
-        <one-hex class="p4_n2" position="p4_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n2]]"></one-hex>
-        <one-hex class="p3_n2" position="p3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n2]]"></one-hex>
-        <one-hex class="p2_n2" position="p2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n2]]"></one-hex>
-        <one-hex class="p1_n2" position="p1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n2]]"></one-hex>
-        <one-hex class="n0_n2" position="n0_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n2]]"></one-hex>
-        <one-hex class="n1_n2" position="n1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n2]]"></one-hex>
-        <one-hex class="n2_n2" position="n2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n2]]"></one-hex>
-        <one-hex class="n3_n2" position="n3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n2]]"></one-hex>
+        <one-hex id="p5_n2" class="p5_n2" position="p5_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n2" class="p4_n2" position="p4_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n2" class="p3_n2" position="p3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n2" class="p2_n2" position="p2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n2" class="p1_n2" position="p1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n2" class="n0_n2" position="n0_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_n2" class="n1_n2" position="n1_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_n2" class="n2_n2" position="n2_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n3_n2" class="n3_n2" position="n3_n2" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n3_n2]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n3" position="p5_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n3]]"></one-hex>
-        <one-hex class="p4_n3" position="p4_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n3]]"></one-hex>
-        <one-hex class="p3_n3" position="p3_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n3]]"></one-hex>
-        <one-hex class="p2_n3" position="p2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n3]]"></one-hex>
-        <one-hex class="p1_n3" position="p1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n3]]"></one-hex>
-        <one-hex class="n0_n3" position="n0_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n3]]"></one-hex>
-        <one-hex class="n1_n3" position="n1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n3]]"></one-hex>
-        <one-hex class="n2_n3" position="n2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n3]]"></one-hex>
+        <one-hex id="p5_n3" class="p5_n3" position="p5_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n3" class="p4_n3" position="p4_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n3" class="p3_n3" position="p3_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n3" class="p2_n3" position="p2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n3" class="p1_n3" position="p1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n3" class="n0_n3" position="n0_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_n3" class="n1_n3" position="n1_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n2_n3" class="n2_n3" position="n2_n3" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n2_n3]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n4" position="p5_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n4]]"></one-hex>
-        <one-hex class="p4_n4" position="p4_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n4]]"></one-hex>
-        <one-hex class="p3_n4" position="p3_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n4]]"></one-hex>
-        <one-hex class="p2_n4" position="p2_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n4]]"></one-hex>
-        <one-hex class="p1_n4" position="p1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n4]]"></one-hex>
-        <one-hex class="n0_n4" position="n0_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n4]]"></one-hex>
-        <one-hex class="n1_n4" position="n1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n4]]"></one-hex>
+        <one-hex id="p5_n4" class="p5_n4" position="p5_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n4" class="p4_n4" position="p4_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n4" class="p3_n4" position="p3_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n4" class="p2_n4" position="p2_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n4" class="p1_n4" position="p1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n4" class="n0_n4" position="n0_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n1_n4" class="n1_n4" position="n1_n4" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n1_n4]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="p5_n5" position="p5_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n5]]"></one-hex>
-        <one-hex class="p4_n5" position="p4_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n5]]"></one-hex>
-        <one-hex class="p3_n5" position="p3_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n5]]"></one-hex>
-        <one-hex class="p2_n5" position="p2_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n5]]"></one-hex>
-        <one-hex class="p1_n5" position="p1_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n5]]"></one-hex>
-        <one-hex class="n0_n5" position="n0_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n5]]"></one-hex>
+        <one-hex id="p5_n5" class="p5_n5" position="p5_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p5_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p4_n5" class="p4_n5" position="p4_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p4_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p3_n5" class="p3_n5" position="p3_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p3_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p2_n5" class="p2_n5" position="p2_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p2_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="p1_n5" class="p1_n5" position="p1_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[p1_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="n0_n5" class="n0_n5" position="n0_n5" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[n0_n5]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
 
-        <one-hex class="TV_01" position="TV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_01]]"></one-hex>
-        <one-hex class="TV_02" position="TV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_02]]"></one-hex>
-        <one-hex class="TV_03" position="TV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_03]]"></one-hex>
-        <one-hex class="TV_04" position="TV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_04]]"></one-hex>
-        <one-hex class="TV_05" position="TV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_05]]"></one-hex>
-        <one-hex class="TV_06" position="TV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_06]]"></one-hex>
-        <one-hex class="TV_07" position="TV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_07]]"></one-hex>
-        <one-hex class="TV_08" position="TV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_08]]"></one-hex>
-        <one-hex class="TV_09" position="TV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_09]]"></one-hex>
-        <one-hex class="TV_10" position="TV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_10]]"></one-hex>
-        <one-hex class="TV_11" position="TV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_11]]"></one-hex>
-        <one-hex class="TV_12" position="TV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_12]]"></one-hex>
-        <one-hex class="TV_13" position="TV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_13]]"></one-hex>
+        <one-hex id="TV_01" class="TV_01" position="TV_01" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_01]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_02" class="TV_02" position="TV_02" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_02]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_03" class="TV_03" position="TV_03" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_03]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_04" class="TV_04" position="TV_04" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_04]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_05" class="TV_05" position="TV_05" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_05]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_06" class="TV_06" position="TV_06" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_06]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_07" class="TV_07" position="TV_07" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_07]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_08" class="TV_08" position="TV_08" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_08]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_09" class="TV_09" position="TV_09" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_09]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_10" class="TV_10" position="TV_10" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_10]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_11" class="TV_11" position="TV_11" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_11]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_12" class="TV_12" position="TV_12" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_12]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
+        <one-hex id="TV_13" class="TV_13" position="TV_13" rotation="[[rotation]]" selected="{{selected}}"  light="[[light]]" move="[[move]]" state="[[TV_13]]" draggable="true" on-drop="_drop" on-dragover="_allowDrop" on-dragstart="_drag"></one-hex>
         <div class="particles">
           <canvas id="particles"></canvas>
         </div>
@@ -259,6 +259,9 @@ class MyView1 extends PolymerElement {
       route: {
         type: String,
         observer: '_routeChanged'
+      },
+      dragged: {
+        type: Object,
       },
       rotation: {
         type: String,
@@ -393,7 +396,43 @@ class MyView1 extends PolymerElement {
       }
       loop();
    }
+   _drag(ev) {
+     this.dragged = ev.target;
+     console.log("dragging");
 
+     //this.$.id.tok = 'XX';
+   }
+   _allowDrop(ev) {
+     ev.preventDefault();
+     console.log("allowed drop");
+   }
+   _drop(ev) {
+     ev.preventDefault();
+     ev.target.state = this.dragged.state;
+     console.log(this.dragged.tok);
+     this.shadowRoot.querySelector(`#${this.dragged.id}`).state = {tok: 'XX', hue: '128,128,255,0.9'};
+     const url = `https://ladybug.international/Move/Pieces`;
+     const gameId = localStorage.getItem('gameId');
+     const color = localStorage.getItem('color');
+     const moveFrom = this.dragged.id;
+     const moveTo = ev.target.id;
+     const data = {gameId, color, moveFrom, moveTo};
+     console.log(data);
+     fetch(url, {
+       method: 'POST',
+       body: JSON.stringify(data),
+       headers: {'Content-Type': 'application/json'},
+     })
+         .then((response) => {
+           return response.json();
+         })
+         .then((response) => {
+           //console.log(`Server replied with ${JSON.stringify(response)}`)
+         })
+         .catch((error)=>{
+           //console.log(`POST Move Enpoint: error ${JSON.stringify(error)}`)
+         })
+   }
 
    _oops(){
     const gameId = localStorage.getItem('gameId');
