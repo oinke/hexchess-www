@@ -204,7 +204,6 @@ class OneHex extends PolymerElement {
 </svg>
       <svg viewBox="[[halfSize]]" transform$="[[rotateVal]]"><polygon points$="{{hex}}" on-click="_click"/></svg>
       </div>
-      <audio id="portal" loop src="/audio/portal.mp3"> </audio>
     `;
   }
   static get properties() {
